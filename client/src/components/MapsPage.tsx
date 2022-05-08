@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 
-function GamesPage(){
+function MapsPage(){
     
     return(
         <div>
@@ -9,9 +9,9 @@ function GamesPage(){
             <br/>            
             <br/>
 
-            this is the games page
+            this is the maps page
         </div>
     )
 }
 
-export default GamesPage;
+export default MapsPage;
