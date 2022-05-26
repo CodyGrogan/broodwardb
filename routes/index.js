@@ -11,6 +11,7 @@ mongoose.connect(mongodb, {useNewUrlParser: true, useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('err', console.error.bind(console, 'mongodb connection error'));
 
+const PlayerModel = require('../models/PlayerModel');
 
 
 
@@ -18,7 +19,9 @@ db.on('err', console.error.bind(console, 'mongodb connection error'));
 router.get('/api/allplayers', function(req, res) {
 
   console.log("received allplayers request");
-  
+  PlayerModel.find({}, function (err, docs) {
+    console.log(docs);
+  });
   res.sendStatus(200);
 });
 
