@@ -12,6 +12,7 @@ var db = mongoose.connection;
 db.on('err', console.error.bind(console, 'mongodb connection error'));
 
 const PlayerModel = require('../models/PlayerModel');
+const GameModel = require('../models/GameModel');
 
 
 
@@ -20,10 +21,18 @@ router.get('/api/allplayers', function(req, res) {
 
   console.log("received allplayers request");
   PlayerModel.find({}, function (err, docs) {
-    console.log(docs);
+    res.json(docs);
   });
-  res.sendStatus(200);
 });
+
+router.get('/api/allgames', function(req, res){
+  console.log('received allgame request');
+  GameModel.find({}, function(err, docs){
+    res.json(docs);
+  })
+});
+
+
 
 /* GET home page. */
 router.get('*', function(req, res) {
