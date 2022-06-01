@@ -1,6 +1,7 @@
 import {useParams} from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Player from '../Classes/Player';
+import Navbar from '../components/Navbar';
 
 
 function PlayerPage(){
@@ -28,6 +29,8 @@ function PlayerPage(){
     
     return(
         <div>
+                <Navbar/>
+
             this is the player page {id}
 
             {thisPlayer?.name}

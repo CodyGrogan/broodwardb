@@ -10,6 +10,7 @@ let GameSchema = new Schema({
     'date': String,
     'gamenum': Number,
     'map': String,
+    'scraces': {type: Array}
 
     
     }
