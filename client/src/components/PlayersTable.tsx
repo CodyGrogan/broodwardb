@@ -1,6 +1,7 @@
 import { response } from "express";
 import { useEffect, useState } from "react";
 import Player from "../Classes/Player";
+import PlayersTableItem from "./PlayersTableItem";
 
 
 function PlayersTable(props: any){
@@ -23,7 +24,22 @@ function PlayersTable(props: any){
         getPlayerList();
 
     },
-    [])
+    []);
+
+    useEffect(()=>{
+        let length = PlayerList.length;
+        let jsxArr: JSX.Element[] = [];
+       
+        for (let i = 0; i < length; i++){
+            let tablenum = i + 1;
+            let newJSX = <PlayersTableItem name = {PlayerList[i].name} scrace = {PlayerList[i].scrace} tablenum = {tablenum} />
+            jsxArr.push(newJSX);
+        }
+        setPlayerJsxArr(jsxArr);
+
+
+    },
+    [PlayerList]);
 
     return(
         <div>
@@ -39,12 +55,7 @@ function PlayersTable(props: any){
 
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>A Player</td>
-                        <td>Terran</td>
-
-                    </tr>
+                {playerJsxArr}
 
                 </tbody>
             </table>
