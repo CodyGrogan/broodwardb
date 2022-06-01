@@ -8,6 +8,7 @@ import GamesPage from './components/GamesPage';
 import PlayersPage from './components/PlayersPage';
 import TournamentsPage from './components/TournamentsPage';
 import MapsPage from './components/MapsPage';
+import PlayerPage from './components/PlayerPage';
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/players' element={<PlayersPage/>}/>
         <Route path='/tournaments' element={<TournamentsPage/>}/>
         <Route path='/maps' element={<MapsPage/>}/>
+        <Route path='/player/:id' element={<PlayerPage/>}/>
 
 
 

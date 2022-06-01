@@ -4,6 +4,7 @@ import Player from "../Classes/Player";
 import PlayersTableItem from "./PlayersTableItem";
 
 
+
 function PlayersTable(props: any){
 
     const [PlayerList, setPlayerList] = useState<Player[]>([]);
@@ -32,7 +33,7 @@ function PlayersTable(props: any){
        
         for (let i = 0; i < length; i++){
             let tablenum = i + 1;
-            let newJSX = <PlayersTableItem name = {PlayerList[i].name} scrace = {PlayerList[i].scrace} tablenum = {tablenum} />
+            let newJSX = <PlayersTableItem name = {PlayerList[i].name} scrace = {PlayerList[i].scrace} tablenum = {tablenum} elo ={PlayerList[i].elo} id={PlayerList[i]._id} />
             jsxArr.push(newJSX);
         }
         setPlayerJsxArr(jsxArr);

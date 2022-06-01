@@ -26,10 +26,34 @@ router.get('/api/allplayers', function(req, res) {
   });
 });
 
+
+//find single player
+router.get('/api/player/:id', function(req, res) {
+  let playerid = req.params.id;
+  console.log("received allplayers request");
+  PlayerModel.findOne({_id: playerid}, function (err, docs) {
+    console.log(err);
+    res.json(docs);
+  });
+});
+
+
+
 router.get('/api/allgames', function(req, res){
   console.log('received allgame request');
   GameModel.find({}, function(err, docs){
-    res.json(docs);
+    if(err){
+      let thiserror = {
+        error: true
+
+      }
+      res.json(thiserror)
+    }
+    else{
+
+      res.json(docs);
+
+    }
   })
 });
 
