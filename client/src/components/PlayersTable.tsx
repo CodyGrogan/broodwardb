@@ -1,13 +1,26 @@
+import { response } from "express";
 import { useEffect, useState } from "react";
 import Player from "../Classes/Player";
 
 
 function PlayersTable(props: any){
 
-    const StudentList = useState<Player[]>([]);
+    const [PlayerList, setPlayerList] = useState<Player[]>([]);
+    const [playerJsxArr, setPlayerJsxArr] = useState<JSX.Element[]>();
 
+    function getPlayerList(){
+        fetch('/api/allplayers').then(response => response.json()).then(data =>{
+            console.log('received player json');
+            console.log(data);
+            setPlayerList(data);
+        }).catch((error)=>{
+            console.log('error: ' + error);
+        })
+    }
 
     useEffect(()=>{
+
+        getPlayerList();
 
     },
     [])
