@@ -13,6 +13,7 @@ db.on('err', console.error.bind(console, 'mongodb connection error'));
 
 const PlayerModel = require('../models/PlayerModel');
 const GameModel = require('../models/GameModel');
+const TournamentModel = require('../models/TournamentModel');
 
 
 
@@ -28,6 +29,13 @@ router.get('/api/allplayers', function(req, res) {
 router.get('/api/allgames', function(req, res){
   console.log('received allgame request');
   GameModel.find({}, function(err, docs){
+    res.json(docs);
+  })
+});
+
+router.get('/api/alltournaments', function(req, res){
+  console.log('received alltournaments request');
+  TournamentModel.find({}, function(err, docs){
     res.json(docs);
   })
 });
