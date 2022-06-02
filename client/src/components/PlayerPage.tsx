@@ -4,6 +4,13 @@ import Player from '../Classes/Player';
 import Navbar from '../components/Navbar';
 
 
+
+//FOR TESTING LAYOUT
+
+let tempPlayer = new Player('Test Player', '2022/06/02','Zerg', 1500, 'notarealid')
+
+//
+
 function PlayerPage(){
 
     const [thisPlayer, setThisPlayer] = useState<Player>();
@@ -16,7 +23,7 @@ function PlayerPage(){
             setThisPlayer(data);
         }).catch((error)=>{
             console.log('error: ' + error);
-            alert("not found")
+            setThisPlayer(tempPlayer);
         })
     }
 
@@ -31,9 +38,61 @@ function PlayerPage(){
         <div>
                 <Navbar/>
 
+                <br/> <br/>
+
+
             this is the player page {id}
 
-            {thisPlayer?.name}
+          
+
+
+            <div className="container">
+                <div className="row justify-content-start">
+
+                    <div className="col-sm-4">
+
+                        <div className="card">
+                            <div className="card-header">
+                            {thisPlayer?.name}
+                            </div>
+                            <div className="card-body">
+                            {thisPlayer?.name} <br/>
+                            {thisPlayer?.scrace} <br/>
+                            {thisPlayer?.dob} <br/>
+                            {thisPlayer?.elo} <br/>
+
+
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <div className="col-sm-8">
+                        <div className="card">
+                                <div className="card-header">
+                                Game History
+                                </div>
+                                <div className="card-body">
+                                    <table className='table'>
+                                        <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Opponent</th>
+                                        <th>Result</th>
+                                        <th>Map</th>
+
+                                        
+
+                                    </tr>
+                                    </thead>
+
+                                    </table>
+                                </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

@@ -38,6 +38,21 @@ router.get('/api/player/:id', function(req, res) {
 });
 
 
+//find all games containing a player
+
+//find single player
+router.get('/api/gamewithplayer/:playername', function(req, res) {
+  let playername = req.params.playername;
+  console.log("received gamewithplayer request");
+  GameModel.find({players: playername}, function (err, docs) {
+    console.log(err);
+    res.json(docs);
+  });
+});
+
+
+
+
 
 router.get('/api/allgames', function(req, res){
   console.log('received allgame request');

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 function PlayersTableItem(props: any){
-    let linkstring = `/playerpage/${props.id}`;
+    let linkstring = `/player/${props.id}`;
     return(
         <tr>
                         <td>{props.tablenum}</td>
