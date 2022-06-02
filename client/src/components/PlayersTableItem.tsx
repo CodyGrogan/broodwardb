@@ -7,7 +7,6 @@ function PlayersTableItem(props: any){
         <tr>
                         <td>{props.tablenum}</td>
                         <td><Link to={linkstring}>{props.name}</Link></td>
-                        <td>{props.name}</td>
                         <td>{props.scrace}</td>
 
         </tr>

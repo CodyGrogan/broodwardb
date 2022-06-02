@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.Win-Result{
+  color: green;
+}
+.Lose-Result{
+  color: darkred;
+}
