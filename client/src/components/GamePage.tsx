@@ -1,4 +1,9 @@
+import {useParams} from 'react-router-dom';
+
+
 function GamePage(){
+
+    let {tournament, gamenum} = useParams();
     
     return(
         <div>
