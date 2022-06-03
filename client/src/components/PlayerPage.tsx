@@ -100,8 +100,6 @@ function PlayerPage(){
                 <br/> <br/>
 
 
-            this is the player page {id}
-
           
 
 

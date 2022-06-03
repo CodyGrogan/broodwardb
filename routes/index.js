@@ -28,10 +28,10 @@ router.get('/api/allplayers', function(req, res) {
 
 
 //find single player
-router.get('/api/player/:id', function(req, res) {
-  let playerid = req.params.id;
+router.get('/api/player/:playername', function(req, res) {
+  let playername = req.params.playername;
   console.log("received allplayers request");
-  PlayerModel.findOne({_id: playerid}, function (err, docs) {
+  PlayerModel.findOne({name: playername}, function (err, docs) {
     console.log(err);
     res.json(docs);
   });

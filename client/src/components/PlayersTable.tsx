@@ -51,6 +51,7 @@ function PlayersTable(props: any){
                         <th>#</th>
                         <th>Name</th>
                         <th>Race</th>
+                        <th>Elo</th>
 
                     </tr>
 

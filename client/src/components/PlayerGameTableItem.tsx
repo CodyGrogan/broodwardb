@@ -1,5 +1,6 @@
 import { JsxEmit } from "typescript";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 
 function PlayerGameTableItem(props: any){
@@ -8,6 +9,8 @@ function PlayerGameTableItem(props: any){
 
  let gameWinResult = <td className="Win-Result">{props.result}</td>
  let gameLoseResult = <td className="Lose-Result">{props.result}</td>
+
+ let opponentLink =`/player/${props.opponent}`;
 
  useEffect(()=>{
      if (props.result == "Win"){
@@ -27,7 +30,7 @@ function PlayerGameTableItem(props: any){
                 {props.date}
             </td>
             <td>
-                {props.opponent}
+              <Link to={opponentLink} onClick={() => window.location.reload()}> {props.opponent}</Link>
             </td>
             <td>
                 {gameResult}
