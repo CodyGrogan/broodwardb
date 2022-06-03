@@ -78,6 +78,27 @@ router.get('/api/allgames', function(req, res){
   })
 });
 
+router.get('/api/getgame/:tournament/:gamenum', function(req, res){
+  console.log('received getgame request');
+  let tournament = req.params.tournament;
+  let gamenum = req.params.gamenum;
+  //thisrequires both the tournamentname and the game number as parameters
+  GameModel.find({tournament: tournament, gamenum: gamenum}, function(err, docs){
+    if(err){
+      let thiserror = {
+        error: true
+
+      }
+      res.json(thiserror)
+    }
+    else{
+
+      res.json(docs);
+
+    }
+  })
+});
+
 router.get('/api/alltournaments', function(req, res){
   console.log('received alltournaments request');
   TournamentModel.find({}, function(err, docs){

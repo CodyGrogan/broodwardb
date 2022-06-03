@@ -1,3 +1,4 @@
+import GamesTable from "./GamesTable";
 import Navbar from "./Navbar";
 
 function GamesPage(){
@@ -10,6 +11,8 @@ function GamesPage(){
             <br/>
 
             this is the games page
+            <GamesTable />
+            
         </div>
     )
 }
