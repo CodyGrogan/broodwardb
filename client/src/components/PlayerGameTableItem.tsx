@@ -38,6 +38,9 @@ function PlayerGameTableItem(props: any){
             <td>
                 {props.map}
             </td>
+            <td>
+                <a href={props.youtubelink} target="_blank">Link</a>
+            </td>
 
         </tr>
     )

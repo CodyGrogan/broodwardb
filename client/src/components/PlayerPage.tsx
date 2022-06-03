@@ -70,7 +70,7 @@ function PlayerPage(){
                 }
             }
 
-            let newjsx = <PlayerGameTableItem opponent = {opponentName} date = {data[i].date} result ={result} map = {data[i].map} />
+            let newjsx = <PlayerGameTableItem opponent = {opponentName} date = {data[i].date} result ={result} map = {data[i].map} youtubelink={data[i].youtubelink} />
 
             jsxArr.push(newjsx);
 
@@ -137,6 +137,8 @@ function PlayerPage(){
                                         <th>Opponent</th>
                                         <th>Result</th>
                                         <th>Map</th>
+                                        <th>Link</th>
+
 
                                         
 
