@@ -32,7 +32,10 @@ router.get('/api/player/:playername', function(req, res) {
   let playername = req.params.playername;
   console.log("received allplayers request");
   PlayerModel.findOne({name: playername}, function (err, docs) {
-    console.log(err);
+    if(err){
+      console.log(err);
+
+    }
     res.json(docs);
   });
 });
@@ -45,7 +48,10 @@ router.get('/api/gamewithplayer/:playername', function(req, res) {
   let playername = req.params.playername;
   console.log("received gamewithplayer request");
   GameModel.find({players: playername}, function (err, docs) {
-    console.log(err);
+    if(err){
+      console.log(err);
+
+    }
     res.json(docs);
   });
 });
