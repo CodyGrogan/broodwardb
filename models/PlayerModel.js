@@ -8,7 +8,8 @@ let PlayerSchema = new Schema({
     'elo': Number,
     'vZ': Number,
     'vT': Number,
-    'vP': Number
+    'vP': Number,
+    'wiki': String
     }
 );
 

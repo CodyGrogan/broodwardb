@@ -8,7 +8,7 @@ import PlayerGameTableItem from './PlayerGameTableItem';
 
 //FOR TESTING LAYOUT
 
-let tempPlayer = new Player('Test Player', '2022/06/02','Zerg', 1500, 'notarealid')
+let tempPlayer = new Player('Test Player', '2022/06/02','Zerg', 1500, 'notarealid', '/')
 
 //
 
@@ -117,6 +117,7 @@ function PlayerPage(){
                             {thisPlayer?.scrace} <br/>
                             {thisPlayer?.dob} <br/>
                             {thisPlayer?.elo} <br/>
+                            <a href={thisPlayer?.wiki} target="_blank">Liquipedia</a>
 
 
                             </div>
