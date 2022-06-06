@@ -14,6 +14,7 @@ db.on('err', console.error.bind(console, 'mongodb connection error'));
 const PlayerModel = require('../models/PlayerModel');
 const GameModel = require('../models/GameModel');
 const TournamentModel = require('../models/TournamentModel');
+const res = require('express/lib/response');
 
 
 
@@ -30,7 +31,7 @@ router.get('/api/allplayers', function(req, res) {
 //find single player
 router.get('/api/player/:playername', function(req, res) {
   let playername = req.params.playername;
-  console.log("received allplayers request");
+  console.log("received single player request");
   PlayerModel.findOne({name: playername}, function (err, docs) {
     if(err){
       console.log(err);
@@ -106,6 +107,41 @@ router.get('/api/alltournaments', function(req, res){
   })
 });
 
+
+router.get('/api/updateElo', function(req, ){
+
+  console.log("received update Elo request");
+  
+  updateElo();
+  
+  
+});
+
+async function getAllPlayers(){
+  let query = await PlayerModel.find({});
+ 
+  return query;
+
+}
+
+async function getAllGames(){
+  let query = await GameModel.find({});
+ 
+  return query;
+
+}
+
+async function updateElo(){
+
+  let playerList = await getAllPlayers();
+  console.log(playerList);
+  let gameList = await getAllGames();
+  
+  for (let i = 0; i < playerList.length; i++){
+    
+  }
+
+}
 
 
 /* GET home page. */
