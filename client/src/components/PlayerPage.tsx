@@ -16,7 +16,7 @@ function PlayerPage(){
 
     const [thisPlayer, setThisPlayer] = useState<Player>();
     const [gameTableArr, setGameTableArr] = useState<JSX.Element[]>();
-    let { id } = useParams();
+    let { id } = useParams(); //this actually uses names to query
 
     function getPlayer(){
         fetch(`/api/player/${id}`).then(response => response.json()).then(data =>{
@@ -81,14 +81,18 @@ function PlayerPage(){
     }
 
     useEffect(()=>{
+        if (id != undefined){
         getPlayer();
+        }
     
     },
     [])
 
     useEffect(()=>{
 
+        if (thisPlayer?.name != undefined){
         getGameTable();
+        }
     },
     [thisPlayer]);
 

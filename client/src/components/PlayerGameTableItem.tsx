@@ -12,6 +12,13 @@ function PlayerGameTableItem(props: any){
 
  let opponentLink =`/player/${props.opponent}`;
 
+ function waitForReload(){
+    setTimeout(()=>{
+        window.location.reload()
+    }, 100)
+   
+ }
+
  useEffect(()=>{
      if (props.result == "Win"){
          setGameResult(gameWinResult);
@@ -30,7 +37,7 @@ function PlayerGameTableItem(props: any){
                 {props.date}
             </td>
             <td>
-              <Link to={opponentLink} onClick={() => window.location.reload()}> {props.opponent}</Link>
+              <Link to={opponentLink} onClick={() => waitForReload()}> {props.opponent}</Link>
             </td>
             <td>
                 {gameResult}
