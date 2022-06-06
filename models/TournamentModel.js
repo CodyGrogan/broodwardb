@@ -6,7 +6,8 @@ let TournamentSchema = new Schema({
     'players': {type: Array},
     'startDate': String,
     'endDate': String,
-    'top4': {type: Array}
+    'top4': {type: Array},
+    'winnerrace': String
     }
 );
 
