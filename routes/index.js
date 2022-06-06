@@ -138,8 +138,67 @@ async function updateElo(){
   let gameList = await getAllGames();
   
   for (let i = 0; i < playerList.length; i++){
+    let playerName = playerList[i].name;
+    let playerElo = playerList[i].elo;
+    for (let j = 0; j < gameList.length; j++){
+
+      if (gameList[j].players[0] == playerName || gameList[j].players[1] == playerName){
+        
+        
+        let opponent;
+        let result = 0;
+        if (gameList[j].players[0] == playerName){
+          opponent = gameList[j].players[1]
+        }
+        else{
+          opponent = gameList[j].players[0]
+        }
+
+        if (gameList[j].winner[0] == playerName){
+          result = 1;
+        }
+
+       let opponentData = playerList.find(({name}) => name ===opponent );
+
+       let opponentElo = opponentData.elo;
+       console.log(opponentElo);
+
+       let eloWinChance = 1 / (1 + Math.pow(10, (opponentElo - playerElo)/400));
+       console.log(eloWinChance);
+       let eloresultandchance = result - eloWinChance
+       eloresultandchance = eloresultandchance * 16;
+       console.log(eloresultandchance);
+       playerElo = playerElo + eloresultandchance
+       playerElo = Math.round(playerElo);
+       console.log(playerName + ' ' + playerElo);
+       playerList[i].elo = playerElo;
+
+
+       
+
+
+
+
+      }
+
+      
+
+    }
+      
+       PlayerModel.findOne({name: playerName}, function (err, docs) {
+        if(err){
+          console.log(err);
     
+        }
+        docs.elo = playerElo;
+        docs.save();
+      });
+      
+
+   
   }
+
+
 
 }
 
