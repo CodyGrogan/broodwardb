@@ -79,6 +79,28 @@ router.get('/api/allgames', function(req, res){
   })
 });
 
+
+router.get('/api/getallgamesintournament/:tournament', function(req, res){
+  console.log('received allgamesintournament request');
+  let tournament = req.params.tournament
+  GameModel.find({tournament: tournament}, function(err, docs){
+    if(err){
+      let thiserror = {
+        error: true
+
+      }
+      res.json(thiserror)
+    }
+    else{
+
+      res.json(docs);
+
+    }
+  })
+});
+
+
+
 router.get('/api/getgame/:tournament/:gamenum', function(req, res){
   console.log('received getgame request');
   let tournament = req.params.tournament;
@@ -103,6 +125,15 @@ router.get('/api/getgame/:tournament/:gamenum', function(req, res){
 router.get('/api/alltournaments', function(req, res){
   console.log('received alltournaments request');
   TournamentModel.find({}, function(err, docs){
+    res.json(docs);
+  })
+});
+
+
+router.get('/api/getonetournament/:name', function(req, res){
+  console.log('received get tournament request');
+  let tournament = req.params.name;
+  TournamentModel.findOne({name: tournament}, function(err, docs){
     res.json(docs);
   })
 });

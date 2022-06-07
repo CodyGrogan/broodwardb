@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Tournament from "../Classes/Tournament";
 import TournamentTableItem from "./TournamentTableItem";
 
-function TournamentsPage(){
+function TournamentsPage(props: any){
     const [tournamentData, setTournamentData] = useState<Tournament[]>();
     const [tournamentJsx, setTournamentJsx] = useState<JSX.Element[]>();
 

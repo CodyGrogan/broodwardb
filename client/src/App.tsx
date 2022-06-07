@@ -10,7 +10,7 @@ import TournamentsPage from './components/TournamentsPage';
 import MapsPage from './components/MapsPage';
 import PlayerPage from './components/PlayerPage';
 import GamePage from './components/GamePage';
-
+import TournamentPage from './components/TournamentPage';
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
         <Route path='/maps' element={<MapsPage/>}/>
         <Route path='/player/:id' element={<PlayerPage/>}/>
         <Route path='/game/:tournament/:gamenum' element={<GamePage/>}/>
-
+        <Route path='/tournament/:tournament' element={<TournamentPage/>}/>
 
 
 
