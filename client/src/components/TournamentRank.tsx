@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 function TournamentRank(props: any){
 
@@ -8,10 +8,10 @@ function TournamentRank(props: any){
                 {props.num}
             </td>
             <td>
-                {props.name}
+               <Link to={`/player/${props.name}`} > {props.name} </Link>
             </td>
             <td>
-                {props.race}
+                {props.scrace}
             </td>
         </tr>
     )

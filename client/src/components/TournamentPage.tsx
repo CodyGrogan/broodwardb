@@ -3,12 +3,15 @@ import { useEffect, useState } from "react";
 import {useParams} from 'react-router-dom';
 import Game from "../Classes/Game";
 import GamesTableItem from "./GamesTableItem";
+import Tournament from "../Classes/Tournament";
+import TournamentRank from "./TournamentRank";
 
 function TournamentPage(props: any){
 
     const [thisTournament, setThisTournament] = useState();
     const [gameData, setGameData] = useState<Game[]>();
     const [spoilerTable, setSpoilerTable] = useState<JSX.Element[]>();
+    const [rankTable, setRankTable] = useState<JSX.Element[]>();
     let {tournament} = useParams();
 
     function getTournament(){
@@ -76,11 +79,42 @@ function TournamentPage(props: any){
     []);
 
     useEffect(()=>{
-        if (gameData!=null){
+        if (gameData!=null && thisTournament!=null){
+        let raceMap = determinePlayerRace(gameData);
         buildGameTable(gameData);
+        setRankTable(buildRankTable(thisTournament, raceMap));
+
         }
     },
-    [gameData])
+    [gameData, thisTournament])
+
+    
+
+
+    function buildRankTable(data: Tournament, raceMap: Map<string, string>){
+        let rankArr = [];
+        for (let i = 0; i< data.top4.length; i++){
+        let playerRace = raceMap.get(data.top4[i])
+        let rank = i + 1;
+        let rankJSX = <TournamentRank num = {rank} name = {data.top4[i]} scrace = {playerRace}/> ;
+        rankArr.push(rankJSX);
+        }
+
+        return rankArr;
+
+    }
+
+    function determinePlayerRace(gameData: Game[]){
+        let raceMap  = new Map();
+
+        for (let i = 0; i < gameData.length; i++){
+            raceMap.set(gameData[i].players[0], gameData[i].scraces[0]);
+            raceMap.set(gameData[i].players[1], gameData[i].scraces[1]);
+        }
+
+        return raceMap;
+     
+    }
     
     return(
         <div>
@@ -157,6 +191,7 @@ function TournamentPage(props: any){
                             </thead>
                             <tbody>
                                
+                               {rankTable}
 
 
 
