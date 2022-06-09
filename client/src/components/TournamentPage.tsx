@@ -5,12 +5,18 @@ import Game from "../Classes/Game";
 import GamesTableItem from "./GamesTableItem";
 import Tournament from "../Classes/Tournament";
 import TournamentRank from "./TournamentRank";
+import SpoilerFreeTableItem from "./SpoilerFreeTableItem";
+import TournamentPlayerTableItem from "./TournamentPlayerTableItem";
 
 function TournamentPage(props: any){
 
     const [thisTournament, setThisTournament] = useState();
     const [gameData, setGameData] = useState<Game[]>();
     const [spoilerTable, setSpoilerTable] = useState<JSX.Element[]>();
+    const [spoilerFreeTable, setSpoilerFreeTable] = useState<JSX.Element[]>();
+
+    const [playerTable, setPlayerTable] = useState<JSX.Element[]>();
+
     const [rankTable, setRankTable] = useState<JSX.Element[]>();
     let {tournament} = useParams();
 
@@ -68,6 +74,22 @@ function TournamentPage(props: any){
 
     }
 
+    function buildSpoilerFreeTable(data: Game[]){
+
+        let jsxArr: JSX.Element[] = [];
+
+        for (let i = 0; i < data.length; i++){
+           
+
+            let newjsx = <SpoilerFreeTableItem date = {data[i].date} gameNum={data[i].gamenum} youtubelink={data[i].youtubelink}/>
+
+            jsxArr.push(newjsx);
+
+        }
+
+        setSpoilerFreeTable(jsxArr);
+
+    }
 
 
     useEffect(()=>{
@@ -81,14 +103,42 @@ function TournamentPage(props: any){
     useEffect(()=>{
         if (gameData!=null && thisTournament!=null){
         let raceMap = determinePlayerRace(gameData);
+        buildSpoilerFreeTable(gameData);
         buildGameTable(gameData);
+        setPlayerTable(buildPlayerTable(raceMap));
         setRankTable(buildRankTable(thisTournament, raceMap));
 
         }
     },
     [gameData, thisTournament])
 
-    
+    function buildPlayerTable(raceMap: Map<string, string>){
+        let playerArr = [];
+        let names = [...raceMap.keys()];
+        names.sort(function(a: any, b: any) {
+            const nameA = a.toUpperCase(); // ignore upper and lowercase
+            const nameB = b.toUpperCase(); // ignore upper and lowercase
+            if (nameA < nameB) {
+              return -1;
+            }
+            if (nameA > nameB) {
+              return 1;
+            }
+          
+            // names must be equal
+            return 0;
+          });
+        for (let i = 0; i< names.length; i++){
+
+        let playerRace = raceMap.get(names[i])
+        
+        let playerJSX = <TournamentPlayerTableItem  name = {names[i]} scrace = {playerRace}/> ;
+        playerArr.push(playerJSX);
+        }
+
+        return playerArr;
+
+    }
 
 
     function buildRankTable(data: Tournament, raceMap: Map<string, string>){
@@ -128,11 +178,31 @@ function TournamentPage(props: any){
                     <h2 className="accordion-header" id="panelsStayOpen-headingOne">
                     <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                         Spoiler Free Game List
+
+
+                        
                     </button>
                     </h2>
                     <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                     <div className="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+                    <table className="table">
+                            <thead>
+                                <tr>
+                                    <th>Game Number</th>
+                                    <th>Link</th>
+
+
+
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                            {spoilerFreeTable}
+
+                            </tbody>
+                        </table>   
+
                     </div>
                     </div>
                 </div>
@@ -154,6 +224,7 @@ function TournamentPage(props: any){
                                     <th>Game Number</th>
                                     <th>Winner</th>
                                     <th>Loser</th>
+                                    <th>Map</th>
                                     <th>Link</th>
 
 
@@ -169,6 +240,42 @@ function TournamentPage(props: any){
                     </div>
                     </div>
                 </div>
+
+
+                <div className="accordion-item">
+                    <h2 className="accordion-header" id="panelsStayOpen-headingFour">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                        Player List
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                    <div className="accordion-body">
+                        
+                        
+                        <table className="table">
+                            <thead>
+                            <tr>
+                                
+                                <th>Name</th>
+                                <th>Race</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                               
+                               {playerTable}
+
+
+
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    </div>
+                </div>
+
+
+
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="panelsStayOpen-headingThree">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">

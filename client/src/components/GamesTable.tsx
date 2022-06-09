@@ -67,6 +67,7 @@ function GamesTable(props: any){
                         <th>Game Number</th>
                         <th>Winner</th>
                         <th>Loser</th>
+                        <th>Map</th>
                         <th>Link</th>
 
 
