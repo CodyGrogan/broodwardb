@@ -13,6 +13,7 @@ function GamesTableItem(props: any){
         <td>{props.gameNum}</td>
         <td><Link to={winnerLink}>{props.winner}</Link></td>
         <td><Link to={loserLink}>{props.loser}</Link></td>
+        <td>{props.map}</td>
         <td><a href={props.youtubelink} target={"_blank"}>Link</a></td>
 
 
