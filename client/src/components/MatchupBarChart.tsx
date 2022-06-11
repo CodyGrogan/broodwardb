@@ -62,7 +62,7 @@ type MatchupBarChartProps = {
 }
 
 // TvT, TvP, TvZ, PvZ, PvP, ZvZ
-const COLORS = ['#0f0aa8', '#09bdb1', "#400094", "#719400", "#22800d", "#800d4a"];
+const COLORS = ['#0088FE', '#09bdb1', "#400094", "#719400", "#22800d", "#800d4a"];
 
 export default class MatchupBarChart extends PureComponent<MatchupBarChartProps, state> {
   static demoUrl = 'https://codesandbox.io/s/simple-bar-chart-tpz8r';

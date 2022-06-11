@@ -1,4 +1,3 @@
-import internal from "stream";
 
 class Player{
     constructor(name: string, dob: string, scrace: string, elo: number, _id: string, wiki: string){

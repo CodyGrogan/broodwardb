@@ -15,6 +15,7 @@ const PlayerModel = require('../models/PlayerModel');
 const GameModel = require('../models/GameModel');
 const TournamentModel = require('../models/TournamentModel');
 const res = require('express/lib/response');
+const MapModel = require('../models/MapModel');
 
 
 
@@ -78,6 +79,25 @@ router.get('/api/allgames', function(req, res){
     }
   })
 });
+
+router.get('/api/allmaps', function(req, res){
+  console.log('received allmap request');
+  MapModel.find({}, function(err, docs){
+    if(err){
+      let thiserror = {
+        error: true
+
+      }
+      res.json(thiserror)
+    }
+    else{
+
+      res.json(docs);
+
+    }
+  })
+});
+
 
 
 router.get('/api/getallgamesintournament/:tournament', function(req, res){
