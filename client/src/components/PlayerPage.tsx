@@ -70,7 +70,7 @@ function PlayerPage(){
                 }
             }
 
-            let newjsx = <PlayerGameTableItem opponent = {opponentName} date = {data[i].date} result ={result} map = {data[i].map} youtubelink={data[i].youtubelink} />
+            let newjsx = <PlayerGameTableItem opponent = {opponentName} date = {data[i].date} result ={result} map = {data[i].map} tournament = {data[i].tournament} youtubelink={data[i].youtubelink} />
 
             jsxArr.push(newjsx);
 
@@ -110,7 +110,7 @@ function PlayerPage(){
             <div className="container">
                 <div className="row justify-content-start">
 
-                    <div className="col-sm-4">
+                    <div className="col-sm-3">
 
                         <div className="card">
                             <div className="card-header">
@@ -129,7 +129,7 @@ function PlayerPage(){
                        
                     </div>
 
-                    <div className="col-sm-8">
+                    <div className="col-sm-9">
                         <div className="card">
                                 <div className="card-header">
                                 Game History
@@ -142,6 +142,7 @@ function PlayerPage(){
                                         <th>Opponent</th>
                                         <th>Result</th>
                                         <th>Map</th>
+                                        <th>Tourny</th>
                                         <th>Link</th>
 
 

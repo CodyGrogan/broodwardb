@@ -7,13 +7,31 @@ import Tournament from "../Classes/Tournament";
 import TournamentRank from "./TournamentRank";
 import SpoilerFreeTableItem from "./SpoilerFreeTableItem";
 import TournamentPlayerTableItem from "./TournamentPlayerTableItem";
+import SCRacePieChart from "./SCRacePieChart";
+import MatchupBarChart from "./MatchupBarChart";
 
 function TournamentPage(props: any){
 
-    const [thisTournament, setThisTournament] = useState();
+    interface RaceData{
+        name: string,
+        value: number;
+    }
+    interface Matchup {
+        name: string;
+        value: number;
+      
+      }
+
+    const [thisTournament, setThisTournament] = useState<Tournament>();
     const [gameData, setGameData] = useState<Game[]>();
     const [spoilerTable, setSpoilerTable] = useState<JSX.Element[]>();
     const [spoilerFreeTable, setSpoilerFreeTable] = useState<JSX.Element[]>();
+    const [pieData, setPieData] = useState<RaceData[]>();
+    const [racePie, setRacePie] = useState<JSX.Element[]>();
+    const [matchupData, setMatchupData] = useState<Matchup[]>();
+    const [barChart, setBarChart] = useState<JSX.Element[]>();
+
+    const [tournamentName, setTournamentName] = useState<string>("");
 
     const [playerTable, setPlayerTable] = useState<JSX.Element[]>();
 
@@ -91,6 +109,73 @@ function TournamentPage(props: any){
 
     }
 
+    function getRaceNumbers(raceMap: Map<string, string>){
+        let names = [...raceMap.keys()];
+        let zergNum = 0;
+        let terranNum = 0;
+        let protossNum = 0;
+
+        for (let i = 0; i< names.length; i++){
+
+            let playerRace = raceMap.get(names[i])
+            if (playerRace == 'Terran'){
+                terranNum++;
+            }
+            else if (playerRace == 'Zerg'){
+                zergNum++;
+            }
+            else{
+                protossNum++
+            }
+            
+            
+        }
+
+        let protossData: RaceData = {name: 'Protoss', value: protossNum};
+        let terranData: RaceData = {name: 'Terran', value: terranNum};
+        let zergData: RaceData = {name: 'Zerg', value: zergNum};
+        setPieData([terranData, zergData, protossData]);
+
+    }
+
+    function getMatchupData(gameData: Game[]){
+        let tvt = 0;
+        let tvp = 0;
+        let tvz = 0;
+        let pvz = 0;
+        let pvp = 0;
+        let zvz = 0;
+
+        for (let i = 0; i < gameData.length; i++){
+            if (gameData[i].scraces[0] == 'Terran' && gameData[i].scraces[1] == 'Terran'){
+                tvt++
+            }
+            else if (gameData[i].scraces[0] == 'Terran' && gameData[i].scraces[1] == 'Protoss' || gameData[i].scraces[0] == 'Protoss' && gameData[i].scraces[1] == 'Terran'  ){
+                tvp++
+            }
+
+            else if (gameData[i].scraces[0] == 'Terran' && gameData[i].scraces[1] == 'Zerg' || gameData[i].scraces[0] == 'Zerg' && gameData[i].scraces[1] == 'Terran'  ){
+                tvz++
+            }
+            else if (gameData[i].scraces[0] == 'Protoss' && gameData[i].scraces[1] == 'Zerg' || gameData[i].scraces[0] == 'Zerg' && gameData[i].scraces[1] == 'Protoss'  ){
+                pvz++
+            }
+            else if (gameData[i].scraces[0] == 'Protoss' && gameData[i].scraces[1] == 'Protoss' ){
+                pvp++
+            }
+            else if (gameData[i].scraces[0] == 'Zerg' && gameData[i].scraces[1] == 'Zerg' ){
+                zvz++
+            }
+            else{
+                let num = gameData[i].gamenum
+                console.log('when checking matchups something went wrong with' + num);
+            }
+        }
+
+        setMatchupData([{name: 'TvT', value: tvt}, {name: 'TvP', value: tvp},{name: 'TvZ', value: tvz},{name: 'PvZ', value: pvz},{name: 'PvP', value: pvp},{name: 'ZvZ', value: zvz}])
+
+    }
+
 
     useEffect(()=>{
 
@@ -101,12 +186,33 @@ function TournamentPage(props: any){
     []);
 
     useEffect(()=>{
+
+        if (pieData!= undefined){
+        setRacePie([<SCRacePieChart data={pieData}/>])
+        }
+
+    },
+    [pieData]);
+
+    useEffect(()=>{
+        if (matchupData!=undefined){
+            setBarChart([<MatchupBarChart data = {matchupData}/>]);
+        }
+    },
+    [matchupData])
+
+    
+
+    useEffect(()=>{
         if (gameData!=null && thisTournament!=null){
+        setTournamentName(thisTournament.name)
         let raceMap = determinePlayerRace(gameData);
         buildSpoilerFreeTable(gameData);
         buildGameTable(gameData);
         setPlayerTable(buildPlayerTable(raceMap));
         setRankTable(buildRankTable(thisTournament, raceMap));
+        getRaceNumbers(raceMap);
+        getMatchupData(gameData);
 
         }
     },
@@ -170,20 +276,20 @@ function TournamentPage(props: any){
         <div>
             <Navbar/>
             <br/><br/>
-            this is the Tournament Page 
-
+            
+           <h2> {tournamentName}</h2>
 
             <div className="accordion" id="accordionPanelsStayOpenExample">
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="panelsStayOpen-headingOne">
-                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                         Spoiler Free Game List
 
 
                         
                     </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
                     <div className="accordion-body">
 
                     <table className="table">
@@ -284,10 +390,19 @@ function TournamentPage(props: any){
                     </h2>
                     <div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                     <div className="accordion-body">
+                
+            <div className="container">
+                <div className="row justify-content-start">
+
+                    <div className="col-sm-6">
+
+                    <div className="card">
+                            <div className="card-header">
+                            <strong>Top4</strong>
+                            </div>
+                            <div className="card-body">
                         
-                        
-                        <strong>Top4</strong>
-                        <table className="table">
+                            <table className="table">
                             <thead>
                             <tr>
                                 <th>#</th>
@@ -304,7 +419,52 @@ function TournamentPage(props: any){
 
                             </tbody>
                         </table>
+                            </div>
+                        </div>
+
+                        </div>
+
+
+                        <div className="col-sm-6">
+
+
+                        <div className="card">
+                            <div className="card-header">
+                            <strong>Race Distribution</strong>
+                            </div>
+                            <div className="card-body">
                         
+                             {racePie}
+
+                            </div>
+                        </div>
+
+                        </div>
+
+
+                    <div className="row justify-content-start">
+
+                        <div className="col-sm-6">
+
+
+                        <div className="card">
+                            <div className="card-header">
+                            <strong>Matchups</strong>
+                            </div>
+                            <div className="card-body">
+                        
+                             {barChart}
+
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+
+                    </div>
+                    </div>
+
+   
                     </div>
                     </div>
                 </div>
