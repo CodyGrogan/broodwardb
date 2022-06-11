@@ -51,8 +51,22 @@ function MapsPage(){
             <br/>
 
             this is the maps page
+            <table className='table'>
+                        <thead>
+                                <tr>
+                                        <th>Name</th>
+                                        <th>Players</th>
+                                        <th>Games</th>
+                                </tr>
+                                </thead>
 
-            {mapTable}
+                                    <tbody>
+                         
+                                    {mapTable}
+                                    </tbody>
+
+            </table>
+
         </div>
     )
 }

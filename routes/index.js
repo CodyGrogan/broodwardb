@@ -99,6 +99,39 @@ router.get('/api/allmaps', function(req, res){
 });
 
 
+router.get('/api/getmap/:map', function(req, res){
+  console.log('received allmap request');
+  let map = req.params.map;
+
+  MapModel.findOne({name: map}, function(err, docs){
+    if(err){
+      let thiserror = {
+        error: true
+
+      }
+      res.json(thiserror)
+    }
+    else{
+
+      res.json(docs);
+
+    }
+  })
+});
+
+router.get('/api/gameswithmap/:map', function(req, res) {
+  let map = req.params.map;
+  console.log("received gameswithmap request");
+  GameModel.find({map: map}, function (err, docs) {
+    if(err){
+      console.log(err);
+
+    }
+    res.json(docs);
+  });
+});
+
+
 
 router.get('/api/getallgamesintournament/:tournament', function(req, res){
   console.log('received allgamesintournament request');

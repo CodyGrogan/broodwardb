@@ -6,9 +6,9 @@ function MapsTableItem(props: any){
 
 
     return(<tr>
-       <Link to={`/map/${props.name}`}><td>{props.name}</td></Link> 
+       <td> <Link to={`/map/${props.name}`}>{props.name}</Link> </td>
         <td>{props.maxPlayers}</td>
-        
+        <td>{props.gamesPlayed}</td>
 
 
     </tr>)
