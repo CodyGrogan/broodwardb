@@ -159,7 +159,6 @@ function MapPage(){
         <div>
             <Navbar/>
             <br/>            <br/>
-            this is the map Page 
 
             
             <div className="container">

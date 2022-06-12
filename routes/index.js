@@ -196,7 +196,20 @@ router.get('/api/updateElo', function(req, ){
 
   console.log("received update Elo request");
   
-  updateElo();
+
+  //the second time the calculation is done backwards to make sure there was already a set elo for every player
+  updateElo(false);
+  updateElo(true);
+
+  
+  
+});
+
+router.get('/api/resetElo', function(req, ){
+
+  console.log("received reset Elo request");
+  
+  resetElo();
   
   
 });
@@ -215,11 +228,34 @@ async function getAllGames(){
 
 }
 
-async function updateElo(){
+async function resetElo(){
+
+  console.log('reseting player elo to 1500')
+  let playerList = await getAllPlayers();
+
+  for (let i = 0; i < playerList.length; i++){
+  PlayerModel.findOne({name: playerList[i].name}, function (err, docs) {
+    if(err){
+      console.log(err);
+
+    }
+    docs.elo = 1500;
+    docs.save();
+  });
+  }
+
+}
+
+async function updateElo(reverse){
 
   let playerList = await getAllPlayers();
   console.log(playerList);
   let gameList = await getAllGames();
+
+  if (reverse == true){
+    playerList.reverse();
+    
+  }
   
   for (let i = 0; i < playerList.length; i++){
     let playerName = playerList[i].name;
@@ -250,7 +286,7 @@ async function updateElo(){
        let eloWinChance = 1 / (1 + Math.pow(10, (opponentElo - playerElo)/400));
        console.log(eloWinChance);
        let eloresultandchance = result - eloWinChance
-       eloresultandchance = eloresultandchance * 16;
+       eloresultandchance = eloresultandchance * 40;
        console.log(eloresultandchance);
        playerElo = playerElo + eloresultandchance
        playerElo = Math.round(playerElo);

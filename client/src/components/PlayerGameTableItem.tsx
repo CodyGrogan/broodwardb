@@ -43,7 +43,7 @@ function PlayerGameTableItem(props: any){
                 {gameResult}
             </td>
             <td>
-                {props.map}
+            <Link to={`/map/${props.map}`}>{props.map}</Link>
             </td>
 
             <td>
