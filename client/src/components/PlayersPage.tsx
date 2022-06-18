@@ -10,9 +10,10 @@ function PlayersPage(){
     <br/>            
     <br/>
 
-            this is the players page
+     
 
         <PlayersTable/>
+        <br/>
 
         </div>
     )
