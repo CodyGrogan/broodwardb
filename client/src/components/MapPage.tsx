@@ -173,10 +173,10 @@ function MapPage(){
                             <div className="card-body">
                         
                             Max Players: {thisMap?.maxPlayers} <br/>
-                            Games Played: {thisMap?.gamesPlayed} <br/>
-                            TvP Win Rate: {winData?.tvp} <br/>
-                            TvZ Win Rate: {winData?.tvz} <br/>
-                            PvZ Win Rate: {winData?.pvz} <br/>
+                            Games Played: {gameTableArr.length} <br/>
+                            TvP Win Rate: {winData?.tvp}% <br/>
+                            TvZ Win Rate: {winData?.tvz}% <br/>
+                            PvZ Win Rate: {winData?.pvz}% <br/>
 
                          
                             </div>
