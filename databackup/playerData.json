@@ -1,0 +1,314 @@
+[
+    {
+      "_id": "62a500da6715394660753fb4",
+      "name": "815",
+      "dob": "1987-10-10",
+      "scrace": "Zerg",
+      "elo": 1485,
+      "wiki": "https://liquipedia.net/starcraft/815_(Player)"
+    },
+    {
+      "_id": "629b8bd73ad9cbe3b89ccdbd",
+      "name": "Action",
+      "dob": "1992-04-23",
+      "scrace": "Zerg",
+      "elo": 1478,
+      "wiki": "https://liquipedia.net/starcraft/Action"
+    },
+    {
+      "_id": "62729f5b4e9909f7e8ad5a04",
+      "name": "Barracks",
+      "dob": "1991-07-24",
+      "scrace": "Terran",
+      "elo": 1463,
+      "wiki": "https://liquipedia.net/starcraft/BarrackS"
+    },
+    {
+      "_id": "62729f1d4e9909f7e8ad5a02",
+      "name": "Beast",
+      "dob": "1994-12-06",
+      "scrace": "Zerg",
+      "elo": 1447,
+      "wiki": "https://liquipedia.net/starcraft/Beast"
+    },
+    {
+      "_id": "62729e614e9909f7e8ad5a00",
+      "name": "Best",
+      "dob": "1989-10-06",
+      "scrace": "Protoss",
+      "elo": 1449,
+      "wiki": "https://liquipedia.net/starcraft/Best"
+    },
+    {
+      "_id": "629b8c443ad9cbe3b89ccdbf",
+      "name": "Bishop",
+      "dob": "1995-03-16",
+      "scrace": "Terran",
+      "elo": 1461,
+      "wiki": "https://liquipedia.net/starcraft/BishOp"
+    },
+    {
+      "_id": "629b8ab83ad9cbe3b89ccdb8",
+      "name": "Bisu",
+      "dob": "1989-11-03",
+      "scrace": "Protoss",
+      "elo": 1517,
+      "wiki": "https://liquipedia.net/starcraft/Bisu"
+    },
+    {
+      "_id": "62a501266715394660753fb5",
+      "name": "free",
+      "dob": "1988-07-14",
+      "scrace": "Protoss",
+      "elo": 1503,
+      "wiki": "https://liquipedia.net/starcraft/Free"
+    },
+    {
+      "_id": "629b8cd73ad9cbe3b89ccdc1",
+      "name": "ggaemo",
+      "dob": "1988-09-08",
+      "scrace": "Zerg",
+      "elo": 1460,
+      "wiki": "https://liquipedia.net/starcraft/Ggaemo"
+    },
+    {
+      "_id": "629b8d483ad9cbe3b89ccdc3",
+      "name": "Guemchi",
+      "dob": "1989-11-08",
+      "scrace": "Protoss",
+      "elo": 1460,
+      "wiki": "https://liquipedia.net/starcraft/GuemChi"
+    },
+    {
+      "_id": "629cd2048a361d55b1c442b4",
+      "name": "Hero",
+      "dob": "1990-06-20",
+      "scrace": "Zerg",
+      "elo": 1543,
+      "wiki": "https://liquipedia.net/starcraft/Hero"
+    },
+    {
+      "_id": "629b8c163ad9cbe3b89ccdbe",
+      "name": "Horang2",
+      "dob": "1992-01-15",
+      "scrace": "Protoss",
+      "elo": 1481,
+      "wiki": "https://liquipedia.net/starcraft/Horang2"
+    },
+    {
+      "_id": "62a501646715394660753fb7",
+      "name": "Hyuk",
+      "dob": "1987-04-11",
+      "scrace": "Zerg",
+      "elo": 1458,
+      "wiki": "https://liquipedia.net/starcraft/Hyuk"
+    },
+    {
+      "_id": "62a5013c6715394660753fb6",
+      "name": "HyuN",
+      "dob": "1988-01-15",
+      "scrace": "Zerg",
+      "elo": 1500,
+      "wiki": "https://liquipedia.net/starcraft/HyuN"
+    },
+    {
+      "_id": "62a63cff9eef7c7ab770ea33",
+      "name": "Hyun",
+      "dob": "1988-01-15",
+      "scrace": "Zerg",
+      "elo": 1478,
+      "wiki": "https://liquipedia.net/starcraft/HyuN"
+    },
+    {
+      "_id": "629cd0988a361d55b1c442ae",
+      "name": "Jaedong",
+      "dob": "1990-01-09",
+      "scrace": "Zerg",
+      "elo": 1471,
+      "wiki": "https://liquipedia.net/starcraft/Jaedong"
+    },
+    {
+      "_id": "629b8d753ad9cbe3b89ccdc4",
+      "name": "JyJ",
+      "dob": "1993-01-24",
+      "scrace": "Terran",
+      "elo": 1494,
+      "wiki": "https://liquipedia.net/starcraft/JyJ"
+    },
+    {
+      "_id": "62a501976715394660753fb8",
+      "name": "Leta",
+      "dob": "1989-11-21",
+      "scrace": "Terran",
+      "elo": 1476,
+      "wiki": "https://liquipedia.net/starcraft/Leta"
+    },
+    {
+      "_id": "629b8ae83ad9cbe3b89ccdb9",
+      "name": "Light",
+      "dob": "1990-03-28",
+      "scrace": "Terran",
+      "elo": 1620,
+      "wiki": "https://liquipedia.net/starcraft/Light"
+    },
+    {
+      "_id": "629cd19e8a361d55b1c442b2",
+      "name": "Mini",
+      "dob": "1994-01-28",
+      "scrace": "Protoss",
+      "elo": 1596,
+      "wiki": "https://liquipedia.net/starcraft/Mini"
+    },
+    {
+      "_id": "629cd0fd8a361d55b1c442b0",
+      "name": "Mong",
+      "dob": "1992-05-17",
+      "scrace": "Terran",
+      "elo": 1448,
+      "wiki": "https://liquipedia.net/starcraft/Mong"
+    },
+    {
+      "_id": "629cd1478a361d55b1c442b1",
+      "name": "Movie",
+      "dob": "1990-08-30",
+      "scrace": "Protoss",
+      "elo": 1444,
+      "wiki": "https://liquipedia.net/starcraft/Movie"
+    },
+    {
+      "_id": "62a500a06715394660753fb3",
+      "name": "nOOb",
+      "dob": "1994-01-02",
+      "scrace": "Protoss",
+      "elo": 1436,
+      "wiki": "https://liquipedia.net/starcraft/NOOB"
+    },
+    {
+      "_id": "629cd2278a361d55b1c442b5",
+      "name": "Queen",
+      "dob": "1990-02-18",
+      "scrace": "Zerg",
+      "elo": 1486,
+      "wiki": "https://liquipedia.net/starcraft/ZerO"
+    },
+    {
+      "_id": "629b8bac3ad9cbe3b89ccdbc",
+      "name": "Rain",
+      "dob": "1992-08-14",
+      "scrace": "Protoss",
+      "elo": 1526,
+      "wiki": "https://liquipedia.net/starcraft/Rain"
+    },
+    {
+      "_id": "629b8c9f3ad9cbe3b89ccdc0",
+      "name": "Royal",
+      "dob": "1995-08-10",
+      "scrace": "Terran",
+      "elo": 1486,
+      "wiki": "https://liquipedia.net/starcraft/BishOp"
+    },
+    {
+      "_id": "629cd03f8a361d55b1c442ad",
+      "name": "Ruin",
+      "dob": "1995-08-21",
+      "scrace": "Protoss",
+      "elo": 1431,
+      "wiki": "https://liquipedia.net/starcraft/Ruin"
+    },
+    {
+      "_id": "629cd1d68a361d55b1c442b3",
+      "name": "Rush",
+      "dob": "1991-11-30",
+      "scrace": "Terran",
+      "elo": 1566,
+      "wiki": "https://liquipedia.net/starcraft/Rush"
+    },
+    {
+      "_id": "629b8b1d3ad9cbe3b89ccdba",
+      "name": "Sacsri",
+      "dob": "1992-02-18",
+      "scrace": "Zerg",
+      "elo": 1489,
+      "wiki": "https://liquipedia.net/starcraft/Sacsri"
+    },
+    {
+      "_id": "62a5007d6715394660753fb2",
+      "name": "Sharp",
+      "dob": "1992-06-15",
+      "scrace": "Terran",
+      "elo": 1515,
+      "wiki": "https://liquipedia.net/starcraft/Sharp"
+    },
+    {
+      "_id": "62a501c26715394660753fb9",
+      "name": "Shine",
+      "dob": "1989-08-24",
+      "scrace": "Zerg",
+      "elo": 1484,
+      "wiki": "https://liquipedia.net/starcraft/Shine"
+    },
+    {
+      "_id": "62729edc4e9909f7e8ad5a01",
+      "name": "Shuttle",
+      "dob": "1990-07-04",
+      "scrace": "Protoss",
+      "elo": 1509,
+      "wiki": "https://liquipedia.net/starcraft/Shuttle_(Player)"
+    },
+    {
+      "_id": "629b8d113ad9cbe3b89ccdc2",
+      "name": "Snow",
+      "dob": "1993-04-01",
+      "scrace": "Protoss",
+      "elo": 1503,
+      "wiki": "https://liquipedia.net/starcraft/Snow"
+    },
+    {
+      "_id": "629b8da23ad9cbe3b89ccdc5",
+      "name": "Soma",
+      "dob": "1995-08-22",
+      "scrace": "Zerg",
+      "elo": 1527,
+      "wiki": "https://liquipedia.net/starcraft/Soma"
+    },
+    {
+      "_id": "629cd0d28a361d55b1c442af",
+      "name": "Soulkey",
+      "dob": "1991-12-10",
+      "scrace": "Zerg",
+      "elo": 1551,
+      "wiki": "https://liquipedia.net/starcraft/Soulkey"
+    },
+    {
+      "_id": "62a5000f6715394660753fb1",
+      "name": "Ss1nz",
+      "dob": "0000-00-00",
+      "scrace": "Protoss",
+      "elo": 1464,
+      "wiki": "https://liquipedia.net/starcraft/Ss1nz"
+    },
+    {
+      "_id": "629cd0008a361d55b1c442ac",
+      "name": "sSak",
+      "dob": "1989-02-14",
+      "scrace": "Terran",
+      "elo": 1445,
+      "wiki": "https://liquipedia.net/starcraft/SSak"
+    },
+    {
+      "_id": "62a5020a6715394660753fba",
+      "name": "Stork",
+      "dob": "1988-08-04",
+      "scrace": "Protoss",
+      "elo": 1489,
+      "wiki": "https://liquipedia.net/starcraft/Stork"
+    },
+    {
+      "_id": "629b8b633ad9cbe3b89ccdbb",
+      "name": "Tyson",
+      "dob": "1990-12-10",
+      "scrace": "Protoss",
+      "elo": 1461,
+      "wiki": "https://liquipedia.net/starcraft/Tyson"
+    }
+  ]

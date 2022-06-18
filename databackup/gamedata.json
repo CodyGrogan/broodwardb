@@ -1,0 +1,4142 @@
+[
+    {
+      "_id": "6272a5774e9909f7e8ad5a05",
+      "players": [
+        "Best",
+        "Beast"
+      ],
+      "winner": [
+        "Best"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=8qFtmMct4vQ",
+      "date": "2022-02-08",
+      "gamenum": 1,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "6272a6d44e9909f7e8ad5a06",
+      "players": [
+        "Shuttle",
+        "Barracks"
+      ],
+      "winner": [
+        "Shuttle"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvT",
+      "youtubelink": "https://www.youtube.com/watch?v=8qFtmMct4vQ",
+      "date": "2022-02-08",
+      "gamenum": 2,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "6272a71c4e9909f7e8ad5a07",
+      "players": [
+        "Best",
+        "Shuttle"
+      ],
+      "winner": [
+        "Best"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvP",
+      "youtubelink": "https://www.youtube.com/watch?v=8qFtmMct4vQ",
+      "date": "2022-02-08",
+      "gamenum": 3,
+      "map": "Butter",
+      "scraces": [
+        "Protoss",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "6272a8504e9909f7e8ad5a08",
+      "players": [
+        "Beast",
+        "Barracks"
+      ],
+      "winner": [
+        "Beast"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=8qFtmMct4vQ",
+      "date": "2022-02-08",
+      "gamenum": 4,
+      "map": "Butter",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "6272a8a64e9909f7e8ad5a09",
+      "players": [
+        "Shuttle",
+        "Beast"
+      ],
+      "winner": [
+        "Shuttle"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=8qFtmMct4vQ",
+      "date": "2022-02-08",
+      "gamenum": 5,
+      "map": "Vermeer",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629cd3578a361d55b1c442b6",
+      "players": [
+        "Light",
+        "Tyson"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=W4tjgq9jwU8",
+      "date": "2022-02-09",
+      "gamenum": 6,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cd3b78a361d55b1c442b7",
+      "players": [
+        "Bisu",
+        "Sacsri"
+      ],
+      "winner": [
+        "Bisu"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=W4tjgq9jwU8",
+      "date": "2022-02-09",
+      "gamenum": 7,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629cd4068a361d55b1c442b8",
+      "players": [
+        "Light",
+        "Bisu"
+      ],
+      "winner": [
+        "Bisu"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=W4tjgq9jwU8",
+      "date": "2022-02-09",
+      "gamenum": 8,
+      "map": "Metaverse",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cd4508a361d55b1c442b9",
+      "players": [
+        "Tyson",
+        "Sacsri"
+      ],
+      "winner": [
+        "Sacsri"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=W4tjgq9jwU8",
+      "date": "2022-02-09",
+      "gamenum": 9,
+      "map": "Metaverse",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629cd48f8a361d55b1c442ba",
+      "players": [
+        "Light",
+        "Sacsri"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=W4tjgq9jwU8",
+      "date": "2022-02-09",
+      "gamenum": 10,
+      "map": "Allegro",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629cd4b78a361d55b1c442bb",
+      "players": [
+        "Rain",
+        "Bishop"
+      ],
+      "winner": [
+        "Rain"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvT",
+      "youtubelink": "https://www.youtube.com/watch?v=7rjNquFbJOk",
+      "date": "2022-02-10",
+      "gamenum": 11,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629cd5008a361d55b1c442bc",
+      "players": [
+        "Action",
+        "Horang2"
+      ],
+      "winner": [
+        "Action"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=7rjNquFbJOk",
+      "date": "2022-02-10",
+      "gamenum": 12,
+      "map": "Eclipse",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cd53c8a361d55b1c442bd",
+      "players": [
+        "Rain",
+        "Action"
+      ],
+      "winner": [
+        "Rain"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=7rjNquFbJOk",
+      "date": "2022-02-10",
+      "gamenum": 13,
+      "map": "Metaverse",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629cd5798a361d55b1c442be",
+      "players": [
+        "Bishop",
+        "Horang2"
+      ],
+      "winner": [
+        "Horang2"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=7rjNquFbJOk",
+      "date": "2022-02-10",
+      "gamenum": 14,
+      "map": "Monopoly",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cd5c38a361d55b1c442bf",
+      "players": [
+        "Action",
+        "Horang2"
+      ],
+      "winner": [
+        "Action"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=7rjNquFbJOk",
+      "date": "2022-02-10",
+      "gamenum": 15,
+      "map": "Vermeer",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cd63d8a361d55b1c442c0",
+      "players": [
+        "Snow",
+        "ggaemo"
+      ],
+      "winner": [
+        "ggaemo"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=Mvj1T1Uyc7g",
+      "date": "2022-02-15",
+      "gamenum": 16,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629cd6a08a361d55b1c442c1",
+      "players": [
+        "Royal",
+        "Guemchi"
+      ],
+      "winner": [
+        "Royal"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=Mvj1T1Uyc7g",
+      "date": "2022-02-15",
+      "gamenum": 17,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cd6f28a361d55b1c442c2",
+      "players": [
+        "Royal",
+        "ggaemo"
+      ],
+      "winner": [
+        "Royal"
+      ],
+      "tournament": "ASL13",
+      "matchup": "Tvz",
+      "youtubelink": "https://www.youtube.com/watch?v=Mvj1T1Uyc7g",
+      "date": "2022-02-15",
+      "gamenum": 18,
+      "map": "Metaverse",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629cd71b8a361d55b1c442c3",
+      "players": [
+        "Snow",
+        "Guemchi"
+      ],
+      "winner": [
+        "Snow"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvP",
+      "youtubelink": "https://www.youtube.com/watch?v=Mvj1T1Uyc7g",
+      "date": "2022-02-15",
+      "gamenum": 19,
+      "map": "Monopoly",
+      "scraces": [
+        "Protoss",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cd7538a361d55b1c442c4",
+      "players": [
+        "ggaemo",
+        "Snow"
+      ],
+      "winner": [
+        "ggaemo"
+      ],
+      "tournament": "ASL13",
+      "matchup": "ZvP",
+      "youtubelink": "https://www.youtube.com/watch?v=Mvj1T1Uyc7g",
+      "date": "2022-02-15",
+      "gamenum": 20,
+      "map": "Vermeer",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cd7808a361d55b1c442c5",
+      "players": [
+        "Soma",
+        "Ruin"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL13",
+      "matchup": "ZvP",
+      "youtubelink": "https://www.youtube.com/watch?v=vRyWJYCtc-8",
+      "date": "2022-02-16",
+      "gamenum": 21,
+      "map": "Eclipse",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cd8318a361d55b1c442c6",
+      "players": [
+        "JyJ",
+        "sSak"
+      ],
+      "winner": [
+        "JyJ"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvT",
+      "youtubelink": "https://www.youtube.com/watch?v=vRyWJYCtc-8",
+      "date": "2022-02-16",
+      "gamenum": 22,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629cd8768a361d55b1c442c7",
+      "players": [
+        "Soma",
+        "JyJ"
+      ],
+      "winner": [
+        "JyJ"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=vRyWJYCtc-8",
+      "date": "2022-02-16",
+      "gamenum": 23,
+      "map": "Metaverse",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629cd8a08a361d55b1c442c8",
+      "players": [
+        "Ruin",
+        "sSak"
+      ],
+      "winner": [
+        "sSak"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=vRyWJYCtc-8",
+      "date": "2022-02-16",
+      "gamenum": 24,
+      "map": "Monopoly",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629cd8df8a361d55b1c442c9",
+      "players": [
+        "Soma",
+        "sSak"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=vRyWJYCtc-8",
+      "date": "2022-02-16",
+      "gamenum": 25,
+      "map": "Allegro",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629cd9068a361d55b1c442ca",
+      "players": [
+        "Jaedong",
+        "Movie"
+      ],
+      "winner": [
+        "Jaedong"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=gRbeFZjak6k",
+      "date": "2022-02-17",
+      "gamenum": 26,
+      "map": "Eclipse",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cdb6f8a361d55b1c442cb",
+      "players": [
+        "Mong",
+        "Soulkey"
+      ],
+      "winner": [
+        "Jaedong"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=gRbeFZjak6k",
+      "date": "2022-02-17",
+      "gamenum": 27,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629cdbc08a361d55b1c442cd",
+      "players": [
+        "Soulkey",
+        "Jaedong"
+      ],
+      "winner": [
+        "Jaedong"
+      ],
+      "tournament": "ASL13",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=gRbeFZjak6k",
+      "date": "2022-02-17",
+      "gamenum": 28,
+      "map": "Butter",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629cdbfc8a361d55b1c442ce",
+      "players": [
+        "Movie",
+        "Mong"
+      ],
+      "winner": [
+        "Mong"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=gRbeFZjak6k",
+      "date": "2022-02-17",
+      "gamenum": 29,
+      "map": "Monopoly",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629cdc338a361d55b1c442cf",
+      "players": [
+        "Soulkey",
+        "Mong"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=gRbeFZjak6k",
+      "date": "2022-02-17",
+      "gamenum": 30,
+      "map": "Vermeer",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629cdcaf8a361d55b1c442d0",
+      "players": [
+        "Mini",
+        "Light"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=HdA3TatEWRQ",
+      "date": "2022-03-01",
+      "gamenum": 31,
+      "map": "Vermeer",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629cdce88a361d55b1c442d1",
+      "players": [
+        "Royal",
+        "Rain"
+      ],
+      "winner": [
+        "Rain"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=HdA3TatEWRQ",
+      "date": "2022-03-01",
+      "gamenum": 32,
+      "map": "Vermeer",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cdd148a361d55b1c442d2",
+      "players": [
+        "Light",
+        "Rain"
+      ],
+      "winner": [
+        "Rain"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=HdA3TatEWRQ",
+      "date": "2022-03-01",
+      "gamenum": 33,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cdd318a361d55b1c442d3",
+      "players": [
+        "Light",
+        "Rain"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=HdA3TatEWRQ",
+      "date": "2022-03-01",
+      "gamenum": 34,
+      "map": "Allegro",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cdd4c8a361d55b1c442d4",
+      "players": [
+        "Light",
+        "Rain"
+      ],
+      "winner": [
+        "Rain"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=HdA3TatEWRQ",
+      "date": "2022-03-01",
+      "gamenum": 35,
+      "map": "Revolver",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cdd848a361d55b1c442d5",
+      "players": [
+        "Mini",
+        "Royal"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=HdA3TatEWRQ",
+      "date": "2022-03-01",
+      "gamenum": 36,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629cddb98a361d55b1c442d6",
+      "players": [
+        "Mini",
+        "Royal"
+      ],
+      "winner": [
+        "Royal"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=HdA3TatEWRQ",
+      "date": "2022-03-01",
+      "gamenum": 37,
+      "map": "Metaverse",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629cddce8a361d55b1c442d7",
+      "players": [
+        "Mini",
+        "Royal"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=HdA3TatEWRQ",
+      "date": "2022-03-01",
+      "gamenum": 38,
+      "map": "Revolver",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629cddeb8a361d55b1c442d8",
+      "players": [
+        "Light",
+        "Mini"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=HdA3TatEWRQ",
+      "date": "2022-03-01",
+      "gamenum": 39,
+      "map": "Butter",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cde0e8a361d55b1c442d9",
+      "players": [
+        "Light",
+        "Mini"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=HdA3TatEWRQ",
+      "date": "2022-03-01",
+      "gamenum": 40,
+      "map": "Allegro",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cde2c8a361d55b1c442da",
+      "players": [
+        "Light",
+        "Mini"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=HdA3TatEWRQ",
+      "date": "2022-03-01",
+      "gamenum": 41,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cde698a361d55b1c442db",
+      "players": [
+        "Rush",
+        "ggaemo"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=dd-ASvJ400M",
+      "date": "2022-03-02",
+      "gamenum": 42,
+      "map": "Vermeer",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629cded08a361d55b1c442dc",
+      "players": [
+        "Action",
+        "Shuttle"
+      ],
+      "winner": [
+        "Action"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=dd-ASvJ400M",
+      "date": "2022-03-02",
+      "gamenum": 43,
+      "map": "Vermeer",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cdf348a361d55b1c442dd",
+      "players": [
+        "Rush",
+        "Action"
+      ],
+      "winner": [
+        "Action"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=dd-ASvJ400M",
+      "date": "2022-03-02",
+      "gamenum": 44,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629cdf678a361d55b1c442de",
+      "players": [
+        "Rush",
+        "Action"
+      ],
+      "winner": [
+        "Action"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=dd-ASvJ400M",
+      "date": "2022-03-02",
+      "gamenum": 45,
+      "map": "Butter",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629cdf8c8a361d55b1c442df",
+      "players": [
+        "ggaemo",
+        "Shuttle"
+      ],
+      "winner": [
+        "Shuttle"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=dd-ASvJ400M",
+      "date": "2022-03-02",
+      "gamenum": 46,
+      "map": "Metaverse",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cdfb58a361d55b1c442e0",
+      "players": [
+        "ggaemo",
+        "Shuttle"
+      ],
+      "winner": [
+        "Shuttle"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=dd-ASvJ400M",
+      "date": "2022-03-02",
+      "gamenum": 47,
+      "map": "Butter",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cdfd98a361d55b1c442e1",
+      "players": [
+        "Rush",
+        "Shuttle"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=dd-ASvJ400M",
+      "date": "2022-03-02",
+      "gamenum": 48,
+      "map": "Butter",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629cdffa8a361d55b1c442e2",
+      "players": [
+        "Rush",
+        "Shuttle"
+      ],
+      "winner": [
+        "Shuttle"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=dd-ASvJ400M",
+      "date": "2022-03-02",
+      "gamenum": 49,
+      "map": "Metaverse",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce0358a361d55b1c442e3",
+      "players": [
+        "Rush",
+        "Shuttle"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=dd-ASvJ400M",
+      "date": "2022-03-02",
+      "gamenum": 50,
+      "map": "Allegro",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce1c08a361d55b1c442e4",
+      "players": [
+        "JyJ",
+        "Hero"
+      ],
+      "winner": [
+        "JyJ"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=uDa1a6OdPAs",
+      "date": "2022-03-08",
+      "gamenum": 51,
+      "map": "Vermeer",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce1fd8a361d55b1c442e5",
+      "players": [
+        "Jaedong",
+        "Soulkey"
+      ],
+      "winner": [
+        "Jaedong"
+      ],
+      "tournament": "ASL13",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=uDa1a6OdPAs",
+      "date": "2022-03-08",
+      "gamenum": 52,
+      "map": "Vermeer",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce2218a361d55b1c442e6",
+      "players": [
+        "JyJ",
+        "Jaedong"
+      ],
+      "winner": [
+        "JyJ"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=uDa1a6OdPAs",
+      "date": "2022-03-08",
+      "gamenum": 53,
+      "map": "Metaverse",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce24d8a361d55b1c442e7",
+      "players": [
+        "JyJ",
+        "Jaedong"
+      ],
+      "winner": [
+        "JyJ"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=uDa1a6OdPAs",
+      "date": "2022-03-08",
+      "gamenum": 54,
+      "map": "Monopoly",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce2718a361d55b1c442e8",
+      "players": [
+        "Hero",
+        "Soulkey"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL13",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=uDa1a6OdPAs",
+      "date": "2022-03-08",
+      "gamenum": 55,
+      "map": "Allegro",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce2978a361d55b1c442e9",
+      "players": [
+        "Hero",
+        "Soulkey"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL13",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=uDa1a6OdPAs",
+      "date": "2022-03-08",
+      "gamenum": 56,
+      "map": "Butter",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce2a78a361d55b1c442ea",
+      "players": [
+        "Jaedong",
+        "Soulkey"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL13",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=uDa1a6OdPAs",
+      "date": "2022-03-08",
+      "gamenum": 57,
+      "map": "Butter",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce2c08a361d55b1c442eb",
+      "players": [
+        "Jaedong",
+        "Soulkey"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL13",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=uDa1a6OdPAs",
+      "date": "2022-03-08",
+      "gamenum": 58,
+      "map": "Eclipse",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce2db8a361d55b1c442ec",
+      "players": [
+        "Queen",
+        "Bisu"
+      ],
+      "winner": [
+        "Bisu"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=yqBx6Bn0ecw",
+      "date": "2022-03-09",
+      "gamenum": 59,
+      "map": "Vermeer",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce3428a361d55b1c442ed",
+      "players": [
+        "Best",
+        "Soma"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=yqBx6Bn0ecw",
+      "date": "2022-03-09",
+      "gamenum": 60,
+      "map": "Vermeer",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce3738a361d55b1c442ee",
+      "players": [
+        "Bisu",
+        "Soma"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=yqBx6Bn0ecw",
+      "date": "2022-03-09",
+      "gamenum": 61,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce3ac8a361d55b1c442f0",
+      "players": [
+        "Bisu",
+        "Soma"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=yqBx6Bn0ecw",
+      "date": "2022-03-09",
+      "gamenum": 62,
+      "map": "Butter",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce3c18a361d55b1c442f1",
+      "players": [
+        "Queen",
+        "Best"
+      ],
+      "winner": [
+        "Queen"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=yqBx6Bn0ecw",
+      "date": "2022-03-09",
+      "gamenum": 63,
+      "map": "Metaverse",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce3e38a361d55b1c442f2",
+      "players": [
+        "Queen",
+        "Best"
+      ],
+      "winner": [
+        "Queen"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=yqBx6Bn0ecw",
+      "date": "2022-03-09",
+      "gamenum": 64,
+      "map": "Butter",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce3f38a361d55b1c442f3",
+      "players": [
+        "Queen",
+        "Bisu"
+      ],
+      "winner": [
+        "Queen"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=yqBx6Bn0ecw",
+      "date": "2022-03-09",
+      "gamenum": 65,
+      "map": "Monopoly",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce4198a361d55b1c442f4",
+      "players": [
+        "Queen",
+        "Bisu"
+      ],
+      "winner": [
+        "Bisu"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=yqBx6Bn0ecw",
+      "date": "2022-03-09",
+      "gamenum": 66,
+      "map": "Metaverse",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce4278a361d55b1c442f5",
+      "players": [
+        "Queen",
+        "Bisu"
+      ],
+      "winner": [
+        "Bisu"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=yqBx6Bn0ecw",
+      "date": "2022-03-09",
+      "gamenum": 67,
+      "map": "Eclipse",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce44c8a361d55b1c442f6",
+      "players": [
+        "Soma",
+        "Rush"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=L4Lc01IudLw",
+      "date": "2022-03-16",
+      "gamenum": 68,
+      "map": "Monopoly",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629ce49e8a361d55b1c442f7",
+      "players": [
+        "Soma",
+        "Rush"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=L4Lc01IudLw",
+      "date": "2022-03-16",
+      "gamenum": 69,
+      "map": "Butter",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629ce4ba8a361d55b1c442f8",
+      "players": [
+        "Soma",
+        "Rush"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=L4Lc01IudLw",
+      "date": "2022-03-16",
+      "gamenum": 70,
+      "map": "Vermeer",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629ce4cc8a361d55b1c442f9",
+      "players": [
+        "Action",
+        "Light"
+      ],
+      "winner": [
+        "Action"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=Ism39fVM4Pw",
+      "date": "2022-03-22",
+      "gamenum": 71,
+      "map": "Revolver",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629ce4f98a361d55b1c442fa",
+      "players": [
+        "Action",
+        "Light"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=Ism39fVM4Pw",
+      "date": "2022-03-22",
+      "gamenum": 72,
+      "map": "Allegro",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629ce50e8a361d55b1c442fb",
+      "players": [
+        "Action",
+        "Light"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=Ism39fVM4Pw",
+      "date": "2022-03-22",
+      "gamenum": 73,
+      "map": "Eclipse",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629ce5268a361d55b1c442fc",
+      "players": [
+        "Action",
+        "Light"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=Ism39fVM4Pw",
+      "date": "2022-03-22",
+      "gamenum": 74,
+      "map": "Metaverse",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629ce5458a361d55b1c442fd",
+      "players": [
+        "JyJ",
+        "Bisu"
+      ],
+      "winner": [
+        "JyJ"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=76zZ5sFpmrI",
+      "date": "2022-03-23",
+      "gamenum": 75,
+      "map": "Allegro",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce5a38a361d55b1c442fe",
+      "players": [
+        "JyJ",
+        "Bisu"
+      ],
+      "winner": [
+        "Bisu"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=76zZ5sFpmrI",
+      "date": "2022-03-23",
+      "gamenum": 76,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce5b98a361d55b1c442ff",
+      "players": [
+        "JyJ",
+        "Bisu"
+      ],
+      "winner": [
+        "JyJ"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=76zZ5sFpmrI",
+      "date": "2022-03-23",
+      "gamenum": 77,
+      "map": "Monopoly",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce5d38a361d55b1c44300",
+      "players": [
+        "JyJ",
+        "Bisu"
+      ],
+      "winner": [
+        "Bisu"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=76zZ5sFpmrI",
+      "date": "2022-03-23",
+      "gamenum": 78,
+      "map": "Revolver",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce5e38a361d55b1c44301",
+      "players": [
+        "JyJ",
+        "Bisu"
+      ],
+      "winner": [
+        "Bisu"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=76zZ5sFpmrI",
+      "date": "2022-03-23",
+      "gamenum": 79,
+      "map": "Metaverse",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce5f68a361d55b1c44302",
+      "players": [
+        "Rain",
+        "Soulkey"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=4Pxsv6YOhOk",
+      "date": "2022-03-29",
+      "gamenum": 80,
+      "map": "Revolver",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce6298a361d55b1c44303",
+      "players": [
+        "Rain",
+        "Soulkey"
+      ],
+      "winner": [
+        "Rain"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=4Pxsv6YOhOk",
+      "date": "2022-03-29",
+      "gamenum": 81,
+      "map": "Allegro",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce6388a361d55b1c44304",
+      "players": [
+        "Rain",
+        "Soulkey"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=4Pxsv6YOhOk",
+      "date": "2022-03-29",
+      "gamenum": 82,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce6608a361d55b1c44305",
+      "players": [
+        "Rain",
+        "Soulkey"
+      ],
+      "winner": [
+        "Rain"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=4Pxsv6YOhOk",
+      "date": "2022-03-29",
+      "gamenum": 83,
+      "map": "Vermeer",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce6718a361d55b1c44306",
+      "players": [
+        "Rain",
+        "Soulkey"
+      ],
+      "winner": [
+        "Rain"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=4Pxsv6YOhOk",
+      "date": "2022-03-29",
+      "gamenum": 84,
+      "map": "Butter",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce68f8a361d55b1c44307",
+      "players": [
+        "Light",
+        "Bisu"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=SkcsCsYvhjQ",
+      "date": "2022-03-30",
+      "gamenum": 85,
+      "map": "Allegro",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce6dc8a361d55b1c44308",
+      "players": [
+        "Light",
+        "Bisu"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=SkcsCsYvhjQ",
+      "date": "2022-03-30",
+      "gamenum": 86,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce6ed8a361d55b1c44309",
+      "players": [
+        "Light",
+        "Bisu"
+      ],
+      "winner": [
+        "Bisu"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=SkcsCsYvhjQ",
+      "date": "2022-03-30",
+      "gamenum": 87,
+      "map": "Monopoly",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce6fe8a361d55b1c4430a",
+      "players": [
+        "Light",
+        "Bisu"
+      ],
+      "winner": [
+        "Bisu"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=SkcsCsYvhjQ",
+      "date": "2022-03-30",
+      "gamenum": 88,
+      "map": "Butter",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce70a8a361d55b1c4430b",
+      "players": [
+        "Light",
+        "Bisu"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=SkcsCsYvhjQ",
+      "date": "2022-03-30",
+      "gamenum": 89,
+      "map": "Vermeer",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce73e8a361d55b1c4430c",
+      "players": [
+        "Light",
+        "Bisu"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=SkcsCsYvhjQ",
+      "date": "2022-03-30",
+      "gamenum": 90,
+      "map": "Revolver",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce7678a361d55b1c4430d",
+      "players": [
+        "Rain",
+        "Soma"
+      ],
+      "winner": [
+        "Rain"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=vCf040jYjGE",
+      "date": "2022-04-03",
+      "gamenum": 91,
+      "map": "Revolver",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce7aa8a361d55b1c4430e",
+      "players": [
+        "Rain",
+        "Soma"
+      ],
+      "winner": [
+        "Rain"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=vCf040jYjGE",
+      "date": "2022-04-03",
+      "gamenum": 92,
+      "map": "Vermeer",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce7be8a361d55b1c4430f",
+      "players": [
+        "Rain",
+        "Soma"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=vCf040jYjGE",
+      "date": "2022-04-03",
+      "gamenum": 93,
+      "map": "Butter",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce7d28a361d55b1c44310",
+      "players": [
+        "Rain",
+        "Soma"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=vCf040jYjGE",
+      "date": "2022-04-03",
+      "gamenum": 94,
+      "map": "Allegro",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce7e08a361d55b1c44311",
+      "players": [
+        "Rain",
+        "Soma"
+      ],
+      "winner": [
+        "Rain"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=vCf040jYjGE",
+      "date": "2022-04-03",
+      "gamenum": 95,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce7f08a361d55b1c44312",
+      "players": [
+        "Rain",
+        "Soma"
+      ],
+      "winner": [
+        "Rain"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=vCf040jYjGE",
+      "date": "2022-04-03",
+      "gamenum": 96,
+      "map": "Monopoly",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "629ce8038a361d55b1c44313",
+      "players": [
+        "Soma",
+        "Bisu"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=rhjBZTIST84",
+      "date": "2022-04-05",
+      "gamenum": 97,
+      "map": "Vermeer",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce8578a361d55b1c44314",
+      "players": [
+        "Soma",
+        "Bisu"
+      ],
+      "winner": [
+        "Bisu"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=rhjBZTIST84",
+      "date": "2022-04-05",
+      "gamenum": 98,
+      "map": "Revolver",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce86e8a361d55b1c44315",
+      "players": [
+        "Soma",
+        "Bisu"
+      ],
+      "winner": [
+        "Bisu"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=rhjBZTIST84",
+      "date": "2022-04-05",
+      "gamenum": 99,
+      "map": "Allegro",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce87e8a361d55b1c44316",
+      "players": [
+        "Soma",
+        "Bisu"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=rhjBZTIST84",
+      "date": "2022-04-05",
+      "gamenum": 100,
+      "map": "Eclipse",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce89b8a361d55b1c44317",
+      "players": [
+        "Soma",
+        "Bisu"
+      ],
+      "winner": [
+        "Bisu"
+      ],
+      "tournament": "ASL13",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=rhjBZTIST84",
+      "date": "2022-04-05",
+      "gamenum": 101,
+      "map": "Butter",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "629ce8ba8a361d55b1c44318",
+      "players": [
+        "Rain",
+        "Light"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=djZt3n1Po6s",
+      "date": "2022-04-09",
+      "gamenum": 102,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629ce8fc8a361d55b1c44319",
+      "players": [
+        "Rain",
+        "Light"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=djZt3n1Po6s",
+      "date": "2022-04-09",
+      "gamenum": 103,
+      "map": "Allegro",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629ce9078a361d55b1c4431a",
+      "players": [
+        "Rain",
+        "Light"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=djZt3n1Po6s",
+      "date": "2022-04-09",
+      "gamenum": 104,
+      "map": "Revolver",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "629ce9218a361d55b1c4431b",
+      "players": [
+        "Rain",
+        "Light"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL13",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=djZt3n1Po6s",
+      "date": "2022-04-09",
+      "gamenum": 105,
+      "map": "Vermeer",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a5023c6715394660753fbb",
+      "players": [
+        "Sharp",
+        "nOOb"
+      ],
+      "winner": [
+        "Sharp"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=MpYBYN4fuA0",
+      "date": "2021-08-28",
+      "gamenum": 1,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a502dd6715394660753fbc",
+      "players": [
+        "Soulkey",
+        "Ss1nz"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=MpYBYN4fuA0",
+      "date": "2021-08-28",
+      "gamenum": 2,
+      "map": "Eclipse",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a503096715394660753fbd",
+      "players": [
+        "Soulkey",
+        "nOOb"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=MpYBYN4fuA0",
+      "date": "2021-08-28",
+      "gamenum": 3,
+      "map": "Ascension",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a503336715394660753fbe",
+      "players": [
+        "Sharp",
+        "Ss1nz"
+      ],
+      "winner": [
+        "Sharp"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=MpYBYN4fuA0",
+      "date": "2021-08-28",
+      "gamenum": 4,
+      "map": "Revolver",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a503686715394660753fbf",
+      "players": [
+        "nOOb",
+        "Sharp"
+      ],
+      "winner": [
+        "nOOb"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=MpYBYN4fuA0",
+      "date": "2021-08-28",
+      "gamenum": 5,
+      "map": "Largo",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a514c36715394660753fc8",
+      "players": [
+        "Best",
+        "815"
+      ],
+      "winner": [
+        "Best"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=R4rJpPw9PZw",
+      "date": "2021-09-01",
+      "gamenum": 6,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a515856715394660753fc9",
+      "players": [
+        "sSak",
+        "free"
+      ],
+      "winner": [
+        "free"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=R4rJpPw9PZw",
+      "date": "2021-09-01",
+      "gamenum": 7,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a515cf6715394660753fca",
+      "players": [
+        "Best",
+        "free"
+      ],
+      "winner": [
+        "free"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=R4rJpPw9PZw",
+      "date": "2021-09-01",
+      "gamenum": 8,
+      "map": "Revolver",
+      "scraces": [
+        "Protoss",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a515ec6715394660753fcb",
+      "players": [
+        "815",
+        "sSak"
+      ],
+      "winner": [
+        "815"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=R4rJpPw9PZw",
+      "date": "2021-09-01",
+      "gamenum": 9,
+      "map": "Lemon",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a516146715394660753fcc",
+      "players": [
+        "815",
+        "Best"
+      ],
+      "winner": [
+        "815"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=R4rJpPw9PZw",
+      "date": "2021-09-01",
+      "gamenum": 10,
+      "map": "Largo",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a5166e6715394660753fcd",
+      "players": [
+        "Snow",
+        "Hyuk"
+      ],
+      "winner": [
+        "Snow"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=bDD2GelmX5c",
+      "date": "2021-09-07",
+      "gamenum": 11,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a516ae6715394660753fce",
+      "players": [
+        "JyJ",
+        "Movie"
+      ],
+      "winner": [
+        "JyJ"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=bDD2GelmX5c",
+      "date": "2021-09-07",
+      "gamenum": 12,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a516e46715394660753fcf",
+      "players": [
+        "JyJ",
+        "Snow"
+      ],
+      "winner": [
+        "Snow"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=bDD2GelmX5c",
+      "date": "2021-09-07",
+      "gamenum": 13,
+      "map": "Ascension",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a517036715394660753fd0",
+      "players": [
+        "Movie",
+        "Hyuk"
+      ],
+      "winner": [
+        "Movie"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=bDD2GelmX5c",
+      "date": "2021-09-07",
+      "gamenum": 14,
+      "map": "Lemon",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a5172d6715394660753fd1",
+      "players": [
+        "JyJ",
+        "Movie"
+      ],
+      "winner": [
+        "JyJ"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=bDD2GelmX5c",
+      "date": "2021-09-07",
+      "gamenum": 15,
+      "map": "Polypoid",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a517606715394660753fd2",
+      "players": [
+        "Soma",
+        "Hyun"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=ciUxx2E7Lew",
+      "date": "2021-09-08",
+      "gamenum": 16,
+      "map": "Eclipse",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a5179f6715394660753fd3",
+      "players": [
+        "Mong",
+        "Barracks"
+      ],
+      "winner": [
+        "Barracks"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvT",
+      "youtubelink": "https://www.youtube.com/watch?v=ciUxx2E7Lew",
+      "date": "2021-09-08",
+      "gamenum": 17,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a517be6715394660753fd4",
+      "players": [
+        "Soma",
+        "Barracks"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=ciUxx2E7Lew",
+      "date": "2021-09-08",
+      "gamenum": 18,
+      "map": "Ascension",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a517e26715394660753fd5",
+      "players": [
+        "Hyun",
+        "Mong"
+      ],
+      "winner": [
+        "Hyun"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=ciUxx2E7Lew",
+      "date": "2021-09-08",
+      "gamenum": 19,
+      "map": "Revolver",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a518226715394660753fd7",
+      "players": [
+        "Hyun",
+        "Barracks"
+      ],
+      "winner": [
+        "Barracks"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=ciUxx2E7Lew",
+      "date": "2021-09-08",
+      "gamenum": 20,
+      "map": "Polypoid",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a518476715394660753fd8",
+      "players": [
+        "Action",
+        "Leta"
+      ],
+      "winner": [
+        "Leta"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=MGuge4H_iyQ",
+      "date": "2021-09-12",
+      "gamenum": 21,
+      "map": "Eclipse",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a518856715394660753fd9",
+      "players": [
+        "Stork",
+        "Beast"
+      ],
+      "winner": [
+        "Stork"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=MGuge4H_iyQ",
+      "date": "2021-09-12",
+      "gamenum": 22,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a518b36715394660753fda",
+      "players": [
+        "Stork",
+        "Leta"
+      ],
+      "winner": [
+        "Stork"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=MGuge4H_iyQ",
+      "date": "2021-09-12",
+      "gamenum": 23,
+      "map": "Ascension",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a518df6715394660753fdc",
+      "players": [
+        "Action",
+        "Beast"
+      ],
+      "winner": [
+        "Beast"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=MGuge4H_iyQ",
+      "date": "2021-09-12",
+      "gamenum": 24,
+      "map": "Revolver",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a519146715394660753fdd",
+      "players": [
+        "Leta",
+        "Beast"
+      ],
+      "winner": [
+        "Beast"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=MGuge4H_iyQ",
+      "date": "2021-09-12",
+      "gamenum": 25,
+      "map": "Good Night",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a5193d6715394660753fde",
+      "players": [
+        "Light",
+        "Ruin"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=GYiAnVGLOSU",
+      "date": "2021-09-14",
+      "gamenum": 26,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a5197d6715394660753fdf",
+      "players": [
+        "Royal",
+        "Shine"
+      ],
+      "winner": [
+        "Shine"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=GYiAnVGLOSU",
+      "date": "2021-09-14",
+      "gamenum": 27,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a5199e6715394660753fe0",
+      "players": [
+        "Light",
+        "Shine"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=GYiAnVGLOSU",
+      "date": "2021-09-14",
+      "gamenum": 28,
+      "map": "Revolver",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a519b76715394660753fe1",
+      "players": [
+        "Royal",
+        "Ruin"
+      ],
+      "winner": [
+        "Royal"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=GYiAnVGLOSU",
+      "date": "2021-09-14",
+      "gamenum": 29,
+      "map": "Ascension",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a519d96715394660753fe2",
+      "players": [
+        "Royal",
+        "Shine"
+      ],
+      "winner": [
+        "Royal"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=GYiAnVGLOSU",
+      "date": "2021-09-14",
+      "gamenum": 30,
+      "map": "Largo",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51a036715394660753fe3",
+      "players": [
+        "Mini",
+        "815"
+      ],
+      "winner": [
+        "815"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=RuSLdfmSLvQ",
+      "date": "2021-09-26",
+      "gamenum": 31,
+      "map": "Polypoid",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51a446715394660753fe4",
+      "players": [
+        "JyJ",
+        "Soma"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=RuSLdfmSLvQ",
+      "date": "2021-09-26",
+      "gamenum": 32,
+      "map": "Polypoid",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51a616715394660753fe5",
+      "players": [
+        "815",
+        "Soma"
+      ],
+      "winner": [
+        "815"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=RuSLdfmSLvQ",
+      "date": "2021-09-26",
+      "gamenum": 33,
+      "map": "Revolver",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51a876715394660753fe6",
+      "players": [
+        "815",
+        "Soma"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=RuSLdfmSLvQ",
+      "date": "2021-09-26",
+      "gamenum": 34,
+      "map": "Ascension",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51a966715394660753fe7",
+      "players": [
+        "815",
+        "Soma"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=RuSLdfmSLvQ",
+      "date": "2021-09-26",
+      "gamenum": 35,
+      "map": "Largo",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51aad6715394660753fe8",
+      "players": [
+        "Mini",
+        "JyJ"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=RuSLdfmSLvQ",
+      "date": "2021-09-26",
+      "gamenum": 36,
+      "map": "Ascension",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a51ad16715394660753fe9",
+      "players": [
+        "Mini",
+        "JyJ"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=RuSLdfmSLvQ",
+      "date": "2021-09-26",
+      "gamenum": 37,
+      "map": "Revolver",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a51ae56715394660753fea",
+      "players": [
+        "Mini",
+        "815"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=RuSLdfmSLvQ",
+      "date": "2021-09-26",
+      "gamenum": 38,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51b086715394660753feb",
+      "players": [
+        "Mini",
+        "815"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=RuSLdfmSLvQ",
+      "date": "2021-09-26",
+      "gamenum": 39,
+      "map": "Ascension",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51b426715394660753fec",
+      "players": [
+        "nOOb",
+        "Hero"
+      ],
+      "winner": [
+        "Hero"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=lzr2Q31lcSw",
+      "date": "2021-09-28",
+      "gamenum": 40,
+      "map": "Polypoid",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51b7b6715394660753fed",
+      "players": [
+        "free",
+        "Royal"
+      ],
+      "winner": [
+        "Royal"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=lzr2Q31lcSw",
+      "date": "2021-09-28",
+      "gamenum": 41,
+      "map": "Polypoid",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a51bcc6715394660753fef",
+      "players": [
+        "Hero",
+        "Royal"
+      ],
+      "winner": [
+        "Hero"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=lzr2Q31lcSw",
+      "date": "2021-09-28",
+      "gamenum": 42,
+      "map": "Ascension",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a51bf36715394660753ff0",
+      "players": [
+        "Hero",
+        "Royal"
+      ],
+      "winner": [
+        "Royal"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=lzr2Q31lcSw",
+      "date": "2021-09-28",
+      "gamenum": 43,
+      "map": "Revolver",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a51c026715394660753ff1",
+      "players": [
+        "Hero",
+        "Royal"
+      ],
+      "winner": [
+        "Royal"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=lzr2Q31lcSw",
+      "date": "2021-09-28",
+      "gamenum": 44,
+      "map": "Good Night",
+      "scraces": [
+        "Zerg",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a51c156715394660753ff2",
+      "players": [
+        "nOOb",
+        "free"
+      ],
+      "winner": [
+        "free"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvP",
+      "youtubelink": "https://www.youtube.com/watch?v=lzr2Q31lcSw",
+      "date": "2021-09-28",
+      "gamenum": 45,
+      "map": "Largo",
+      "scraces": [
+        "Protoss",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a51c396715394660753ff3",
+      "players": [
+        "nOOb",
+        "free"
+      ],
+      "winner": [
+        "free"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvP",
+      "youtubelink": "https://www.youtube.com/watch?v=lzr2Q31lcSw",
+      "date": "2021-09-28",
+      "gamenum": 46,
+      "map": "Revolver",
+      "scraces": [
+        "Protoss",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a51c486715394660753ff4",
+      "players": [
+        "Hero",
+        "free"
+      ],
+      "winner": [
+        "Hero"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=lzr2Q31lcSw",
+      "date": "2021-09-28",
+      "gamenum": 47,
+      "map": "Eclipse",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a51c636715394660753ff5",
+      "players": [
+        "Hero",
+        "free"
+      ],
+      "winner": [
+        "Hero"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=lzr2Q31lcSw",
+      "date": "2021-09-28",
+      "gamenum": 48,
+      "map": "Good Night",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a51c726715394660753ff6",
+      "players": [
+        "Queen",
+        "Stork"
+      ],
+      "winner": [
+        "Queen"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=IkY5Vx59gYk",
+      "date": "2021-10-04",
+      "gamenum": 49,
+      "map": "Polypoid",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a51cdf6715394660753ff7",
+      "players": [
+        "Light",
+        "Snow"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=IkY5Vx59gYk",
+      "date": "2021-10-04",
+      "gamenum": 50,
+      "map": "Polypoid",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a51cfd6715394660753ff8",
+      "players": [
+        "Light",
+        "Queen"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=IkY5Vx59gYk",
+      "date": "2021-10-04",
+      "gamenum": 51,
+      "map": "Lemon",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51d146715394660753ff9",
+      "players": [
+        "Light",
+        "Queen"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=IkY5Vx59gYk",
+      "date": "2021-10-04",
+      "gamenum": 52,
+      "map": "Ascension",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51d2d6715394660753ffa",
+      "players": [
+        "Stork",
+        "Snow"
+      ],
+      "winner": [
+        "Stork"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvP",
+      "youtubelink": "https://www.youtube.com/watch?v=IkY5Vx59gYk",
+      "date": "2021-10-04",
+      "gamenum": 53,
+      "map": "Lemon",
+      "scraces": [
+        "Protoss",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a51d546715394660753ffb",
+      "players": [
+        "Stork",
+        "Snow"
+      ],
+      "winner": [
+        "Snow"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvP",
+      "youtubelink": "https://www.youtube.com/watch?v=IkY5Vx59gYk",
+      "date": "2021-10-04",
+      "gamenum": 54,
+      "map": "Revolver",
+      "scraces": [
+        "Protoss",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a51d6c6715394660753ffc",
+      "players": [
+        "Stork",
+        "Snow"
+      ],
+      "winner": [
+        "Snow"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvP",
+      "youtubelink": "https://www.youtube.com/watch?v=IkY5Vx59gYk",
+      "date": "2021-10-04",
+      "gamenum": 55,
+      "map": "Largo",
+      "scraces": [
+        "Protoss",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a51d796715394660753ffd",
+      "players": [
+        "Queen",
+        "Snow"
+      ],
+      "winner": [
+        "Queen"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=IkY5Vx59gYk",
+      "date": "2021-10-04",
+      "gamenum": 56,
+      "map": "Good Night",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a51dbf6715394660753ffe",
+      "players": [
+        "Queen",
+        "Snow"
+      ],
+      "winner": [
+        "Snow"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=IkY5Vx59gYk",
+      "date": "2021-10-04",
+      "gamenum": 57,
+      "map": "Eclipse",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a51dd26715394660753fff",
+      "players": [
+        "Queen",
+        "Snow"
+      ],
+      "winner": [
+        "Queen"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=IkY5Vx59gYk",
+      "date": "2021-10-04",
+      "gamenum": 58,
+      "map": "Largo",
+      "scraces": [
+        "Zerg",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a51dec6715394660754000",
+      "players": [
+        "Rush",
+        "Barracks"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvT",
+      "youtubelink": "https://www.youtube.com/watch?v=PbqOuu3Ou_Q",
+      "date": "2021-10-05",
+      "gamenum": 59,
+      "map": "Polypoid",
+      "scraces": [
+        "Terran",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a51e2a6715394660754001",
+      "players": [
+        "Beast",
+        "Soulkey"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=PbqOuu3Ou_Q",
+      "date": "2021-10-05",
+      "gamenum": 60,
+      "map": "Polypoid",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51e4e6715394660754002",
+      "players": [
+        "Rush",
+        "Soulkey"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=PbqOuu3Ou_Q",
+      "date": "2021-10-05",
+      "gamenum": 61,
+      "map": "Good Night",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51e6b6715394660754003",
+      "players": [
+        "Rush",
+        "Soulkey"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=PbqOuu3Ou_Q",
+      "date": "2021-10-05",
+      "gamenum": 62,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51e7c6715394660754004",
+      "players": [
+        "Barracks",
+        "Beast"
+      ],
+      "winner": [
+        "Barracks"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=PbqOuu3Ou_Q",
+      "date": "2021-10-05",
+      "gamenum": 63,
+      "map": "Lemon",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51e996715394660754005",
+      "players": [
+        "Barracks",
+        "Beast"
+      ],
+      "winner": [
+        "Barracks"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=PbqOuu3Ou_Q",
+      "date": "2021-10-05",
+      "gamenum": 64,
+      "map": "Ascension",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51ea86715394660754006",
+      "players": [
+        "Barracks",
+        "Rush"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvT",
+      "youtubelink": "https://www.youtube.com/watch?v=PbqOuu3Ou_Q",
+      "date": "2021-10-05",
+      "gamenum": 65,
+      "map": "Ascension",
+      "scraces": [
+        "Terran",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a51ec46715394660754007",
+      "players": [
+        "Barracks",
+        "Rush"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvT",
+      "youtubelink": "https://www.youtube.com/watch?v=PbqOuu3Ou_Q",
+      "date": "2021-10-05",
+      "gamenum": 66,
+      "map": "Revolver",
+      "scraces": [
+        "Terran",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a51ed66715394660754008",
+      "players": [
+        "Soulkey",
+        "Queen"
+      ],
+      "winner": [
+        "Queen"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=T6uwY5D6djk",
+      "date": "2021-10-10",
+      "gamenum": 67,
+      "map": "Polypoid",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51f1e6715394660754009",
+      "players": [
+        "Soulkey",
+        "Queen"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=T6uwY5D6djk",
+      "date": "2021-10-10",
+      "gamenum": 68,
+      "map": "Largo",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51f48671539466075400a",
+      "players": [
+        "Soulkey",
+        "Queen"
+      ],
+      "winner": [
+        "Soulkey"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=T6uwY5D6djk",
+      "date": "2021-10-10",
+      "gamenum": 69,
+      "map": "Ascension",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51f63671539466075400b",
+      "players": [
+        "Soulkey",
+        "Queen"
+      ],
+      "winner": [
+        "Queen"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=T6uwY5D6djk",
+      "date": "2021-10-10",
+      "gamenum": 70,
+      "map": "Good Night",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51f75671539466075400c",
+      "players": [
+        "Soulkey",
+        "Queen"
+      ],
+      "winner": [
+        "Queen"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=T6uwY5D6djk",
+      "date": "2021-10-10",
+      "gamenum": 71,
+      "map": "Revolver",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a51f8a671539466075400d",
+      "players": [
+        "Royal",
+        "Mini"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=jYRHZVAjhX8",
+      "date": "2021-10-12",
+      "gamenum": 72,
+      "map": "Polypoid",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a51fd4671539466075400e",
+      "players": [
+        "Royal",
+        "Mini"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=jYRHZVAjhX8",
+      "date": "2021-10-12",
+      "gamenum": 73,
+      "map": "Lemon",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a52025671539466075400f",
+      "players": [
+        "Royal",
+        "Mini"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=jYRHZVAjhX8",
+      "date": "2021-10-12",
+      "gamenum": 74,
+      "map": "Revolver",
+      "scraces": [
+        "Terran",
+        "Protoss"
+      ]
+    },
+    {
+      "_id": "62a520386715394660754010",
+      "players": [
+        "Rush",
+        "Soma"
+      ],
+      "winner": [
+        "Soma"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=8HjSsaMqPb0",
+      "date": "2021-10-17",
+      "gamenum": 75,
+      "map": "Largo",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a520726715394660754011",
+      "players": [
+        "Rush",
+        "Soma"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=8HjSsaMqPb0",
+      "date": "2021-10-17",
+      "gamenum": 76,
+      "map": "Revolver",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a5208f6715394660754012",
+      "players": [
+        "Rush",
+        "Soma"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=8HjSsaMqPb0",
+      "date": "2021-10-17",
+      "gamenum": 77,
+      "map": "Polypoid",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a520a16715394660754013",
+      "players": [
+        "Rush",
+        "Soma"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=8HjSsaMqPb0",
+      "date": "2021-10-17",
+      "gamenum": 78,
+      "map": "Lemon",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a6149f8bcaed3db1de8e8b",
+      "players": [
+        "Light",
+        "Hero"
+      ],
+      "winner": [
+        "Hero"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=EYcZpsj3wnk",
+      "date": "2021-10-19",
+      "gamenum": 79,
+      "map": "Revolver",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a614e18bcaed3db1de8e8c",
+      "players": [
+        "Light",
+        "Hero"
+      ],
+      "winner": [
+        "Light"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=EYcZpsj3wnk",
+      "date": "2021-10-19",
+      "gamenum": 80,
+      "map": "Ascension",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a614f58bcaed3db1de8e8d",
+      "players": [
+        "Light",
+        "Hero"
+      ],
+      "winner": [
+        "Hero"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=EYcZpsj3wnk",
+      "date": "2021-10-19",
+      "gamenum": 81,
+      "map": "Polypoid",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a6150a8bcaed3db1de8e8e",
+      "players": [
+        "Light",
+        "Hero"
+      ],
+      "winner": [
+        "Hero"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=EYcZpsj3wnk",
+      "date": "2021-10-19",
+      "gamenum": 82,
+      "map": "Good Night",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a6151d8bcaed3db1de8e8f",
+      "players": [
+        "Mini",
+        "Queen"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=9EMthiOCnFw",
+      "date": "2021-10-24",
+      "gamenum": 83,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a6155d8bcaed3db1de8e90",
+      "players": [
+        "Mini",
+        "Queen"
+      ],
+      "winner": [
+        "Queen"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=9EMthiOCnFw",
+      "date": "2021-10-24",
+      "gamenum": 84,
+      "map": "Largo",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a615858bcaed3db1de8e91",
+      "players": [
+        "Mini",
+        "Queen"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=9EMthiOCnFw",
+      "date": "2021-10-24",
+      "gamenum": 85,
+      "map": "Revolver",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a615a38bcaed3db1de8e92",
+      "players": [
+        "Mini",
+        "Queen"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "PvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=9EMthiOCnFw",
+      "date": "2021-10-24",
+      "gamenum": 86,
+      "map": "Ascension",
+      "scraces": [
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a615c98bcaed3db1de8e93",
+      "players": [
+        "Rush",
+        "Hero"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=ahnzlVnvdPE",
+      "date": "2021-10-26",
+      "gamenum": 87,
+      "map": "Polypoid",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a615fe8bcaed3db1de8e94",
+      "players": [
+        "Rush",
+        "Hero"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=ahnzlVnvdPE",
+      "date": "2021-10-26",
+      "gamenum": 88,
+      "map": "Ascension",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a6160f8bcaed3db1de8e95",
+      "players": [
+        "Rush",
+        "Hero"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=ahnzlVnvdPE",
+      "date": "2021-10-26",
+      "gamenum": 89,
+      "map": "Eclipse",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a6161d8bcaed3db1de8e96",
+      "players": [
+        "Rush",
+        "Hero"
+      ],
+      "winner": [
+        "Hero"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=ahnzlVnvdPE",
+      "date": "2021-10-26",
+      "gamenum": 90,
+      "map": "Good Night",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a6162f8bcaed3db1de8e97",
+      "players": [
+        "Rush",
+        "Hero"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=ahnzlVnvdPE",
+      "date": "2021-10-26",
+      "gamenum": 91,
+      "map": "Largo",
+      "scraces": [
+        "Terran",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a6164a8bcaed3db1de8e98",
+      "players": [
+        "Queen",
+        "Hero"
+      ],
+      "winner": [
+        "Hero"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=ObjBD2Q3E6g",
+      "date": "2021-10-31",
+      "gamenum": 92,
+      "map": "Eclipse",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a616898bcaed3db1de8e99",
+      "players": [
+        "Queen",
+        "Hero"
+      ],
+      "winner": [
+        "Hero"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=ObjBD2Q3E6g",
+      "date": "2021-10-31",
+      "gamenum": 93,
+      "map": "Ascension",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a616a08bcaed3db1de8e9a",
+      "players": [
+        "Queen",
+        "Hero"
+      ],
+      "winner": [
+        "Queen"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=ObjBD2Q3E6g",
+      "date": "2021-10-31",
+      "gamenum": 94,
+      "map": "Polypoid",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a616c18bcaed3db1de8e9b",
+      "players": [
+        "Queen",
+        "Hero"
+      ],
+      "winner": [
+        "Hero"
+      ],
+      "tournament": "ASL12",
+      "matchup": "ZvZ",
+      "youtubelink": "https://www.youtube.com/watch?v=ObjBD2Q3E6g",
+      "date": "2021-10-31",
+      "gamenum": 95,
+      "map": "Good Night",
+      "scraces": [
+        "Zerg",
+        "Zerg"
+      ]
+    },
+    {
+      "_id": "62a63a348551eddc79ee0113",
+      "players": [
+        "Mini",
+        "Rush"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=ahnzlVnvdPE",
+      "date": "2021-11-07",
+      "gamenum": 96,
+      "map": "Lemon",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a63a788551eddc79ee0114",
+      "players": [
+        "Mini",
+        "Rush"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=ahnzlVnvdPE",
+      "date": "2021-11-07",
+      "gamenum": 97,
+      "map": "Largo",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a63a898551eddc79ee0115",
+      "players": [
+        "Mini",
+        "Rush"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=ahnzlVnvdPE",
+      "date": "2021-11-07",
+      "gamenum": 98,
+      "map": "Eclipse",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a63a9c8551eddc79ee0116",
+      "players": [
+        "Mini",
+        "Rush"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=ahnzlVnvdPE",
+      "date": "2021-11-07",
+      "gamenum": 99,
+      "map": "Good Night",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a63ab18551eddc79ee0117",
+      "players": [
+        "Mini",
+        "Rush"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=ahnzlVnvdPE",
+      "date": "2021-11-07",
+      "gamenum": 100,
+      "map": "Ascension",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a63ac88551eddc79ee0118",
+      "players": [
+        "Mini",
+        "Rush"
+      ],
+      "winner": [
+        "Rush"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=ahnzlVnvdPE",
+      "date": "2021-11-07",
+      "gamenum": 101,
+      "map": "Polypoid",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    },
+    {
+      "_id": "62a63ae88551eddc79ee0119",
+      "players": [
+        "Mini",
+        "Rush"
+      ],
+      "winner": [
+        "Mini"
+      ],
+      "tournament": "ASL12",
+      "matchup": "TvP",
+      "youtubelink": "https://www.youtube.com/watch?v=ahnzlVnvdPE",
+      "date": "2021-11-07",
+      "gamenum": 102,
+      "map": "Revolver",
+      "scraces": [
+        "Protoss",
+        "Terran"
+      ]
+    }
+  ]
