@@ -192,7 +192,7 @@ router.get('/api/getonetournament/:name', function(req, res){
 });
 
 
-router.get('/api/updateElo', function(req, ){
+router.get('/api/updateElo', function(req, res){
 
   console.log("received update Elo request");
   
@@ -201,15 +201,19 @@ router.get('/api/updateElo', function(req, ){
   updateElo(false);
   updateElo(true);
 
+  res.sendStatus(200);
+
   
   
 });
 
-router.get('/api/resetElo', function(req, ){
+router.get('/api/resetElo', function(req, res){
 
   console.log("received reset Elo request");
   
   resetElo();
+  res.sendStatus(200);
+
   
   
 });
