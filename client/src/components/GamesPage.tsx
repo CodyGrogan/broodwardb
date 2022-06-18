@@ -4,15 +4,17 @@ import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import Game from "../Classes/Game";
 
+
 function GamesPage(){
 
     const [gameData, setGameData] = useState<Game[]>([]);
+    const [gameTable, setGameTable] = useState<JSX.Element[]>([]);
 
     function getGameData(){
         fetch(`/api/allgames/`).then(response => response.json()).then(data =>{
             console.log('received game data json');
             console.log(data);
-            setGameData(data)
+            setGameTable([<GamesTable data={data}/>])
             
         }).catch((error)=>{
             console.log('error: ' + error);
@@ -25,6 +27,7 @@ function GamesPage(){
     
     useEffect(()=>{
       
+        getGameData();
 
     },
     [])
@@ -37,7 +40,7 @@ function GamesPage(){
             <br/>
 
             this is the games page
-            <GamesTable data={gameData} />
+            {gameTable}
             
         </div>
     )

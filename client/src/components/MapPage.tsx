@@ -6,6 +6,7 @@ import Game from '../Classes/Game';
 import GamesTableItem
  from './GamesTableItem';
 import { parse } from 'node:path/win32';
+import GamesTable from './GamesTable';
 
 function MapPage(){
 
@@ -22,6 +23,7 @@ function MapPage(){
     const [thisMap, setThisMap] = useState(defaultMap);
     const [gameTableArr, setGameTableArr] = useState<JSX.Element[]>([]);
     const [winData, setWinData] = useState<WinRateData>();
+    const [gameData, setGameData] = useState<Game[]>([]);
 
  
     useEffect(()=>{
@@ -47,7 +49,9 @@ function MapPage(){
         fetch(`/api/gameswithmap/${mapName}`).then(response => response.json()).then(data =>{
             console.log('received game data json');
             console.log(data);
-            buildGameTable(data);
+            //buildGameTable(data);
+            setGameData(data);
+            setGameTableArr([<GamesTable data={data} />]);
             parseGameData(data);
         }).catch((error)=>{
             console.log('error: ' + error);
@@ -173,7 +177,7 @@ function MapPage(){
                             <div className="card-body">
                         
                             Max Players: {thisMap?.maxPlayers} <br/>
-                            Games Played: {gameTableArr.length} <br/>
+                            Games Played: {gameData.length} <br/>
                             TvP Win Rate: {winData?.tvp}% <br/>
                             TvZ Win Rate: {winData?.tvz}% <br/>
                             PvZ Win Rate: {winData?.pvz}% <br/>
@@ -192,25 +196,8 @@ function MapPage(){
                                 Game History
                                 </div>
                                 <div className="card-body">
-                                    <table className='table'>
-                                        <thead>
-                                    <tr>
-                                    <th>Date</th>
-                                    <th>Tournament</th>
-                                    <th>Game Number</th>
-                                    <th>Winner</th>
-                                    <th>Loser</th>
-                                    <th>Map</th>
-                                    <th>Link</th>
-
-                                    </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        {gameTableArr}
-                                    </tbody>
-
-                                    </table>
+                                    
+                                    {gameTableArr}
                                 </div>
                         </div>
 

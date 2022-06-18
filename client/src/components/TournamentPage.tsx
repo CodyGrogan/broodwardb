@@ -9,6 +9,7 @@ import SpoilerFreeTableItem from "./SpoilerFreeTableItem";
 import TournamentPlayerTableItem from "./TournamentPlayerTableItem";
 import SCRacePieChart from "./SCRacePieChart";
 import MatchupBarChart from "./MatchupBarChart";
+import GamesTable from "./GamesTable";
 
 function TournamentPage(props: any){
 
@@ -208,7 +209,8 @@ function TournamentPage(props: any){
         setTournamentName(thisTournament.name)
         let raceMap = determinePlayerRace(gameData);
         buildSpoilerFreeTable(gameData);
-        buildGameTable(gameData);
+        //buildGameTable(gameData); not necessary with reusable gametable
+        setSpoilerTable([<GamesTable data={gameData} />])
         setPlayerTable(buildPlayerTable(raceMap));
         setRankTable(buildRankTable(thisTournament, raceMap));
         getRaceNumbers(raceMap);
@@ -322,26 +324,10 @@ function TournamentPage(props: any){
                     <div className="accordion-body">
 
 
-                        <table className="table">
-                            <thead>
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Tournament</th>
-                                    <th>Game Number</th>
-                                    <th>Winner</th>
-                                    <th>Loser</th>
-                                    <th>Map</th>
-                                    <th>Link</th>
-
-
-                                </tr>
-
-                            </thead>
-                            <tbody>
+                       
                             {spoilerTable}
 
-                            </tbody>
-                        </table>   
+                         
                                 
                     </div>
                     </div>
