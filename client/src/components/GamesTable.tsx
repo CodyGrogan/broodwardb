@@ -26,7 +26,7 @@ function GamesTable(props: any){
     useEffect(()=>{
         buildGameTable(gameData);
     },
-    [gameData, displayedRows, buildGameTable])
+    [gameData, displayedRows])
 
     
 
@@ -414,6 +414,7 @@ function GamesTable(props: any){
 
     function buildGameTable(data: Game[]){
 
+        console.log('building game table');
         let jsxArr: JSX.Element[] = [];
 
         let length: number = gameData.length;
