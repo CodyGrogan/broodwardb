@@ -63,13 +63,13 @@ function GamesTable(props: any){
             <table className="table">
                 <thead>
                     <tr>
-                        <th>Date</th>
-                        <th>Tournament</th>
-                        <th>Game Number</th>
-                        <th>Winner</th>
-                        <th>Loser</th>
-                        <th>Map</th>
-                        <th>Link</th>
+                        <th><button className="btn btn-info">Date</button> </th>
+                        <th><button className="btn btn-info">Tournament</button></th>
+                        <th><button className="btn btn-info">Game Number</button></th>
+                        <th><button className="btn btn-info">Winner</button></th>
+                        <th><button className="btn btn-info">Loser</button></th>
+                        <th><button className="btn btn-info">Map</button></th>
+                        <th><button className="btn btn-info">Link</button></th>
 
 
                     </tr>
