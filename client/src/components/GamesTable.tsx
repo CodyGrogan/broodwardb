@@ -6,9 +6,10 @@ function GamesTable(props: any){
 
     const [gameTableArr, setGameTableArr] = useState<JSX.Element[]>();
 
+   
 
     useEffect(()=>{
-        getGameTable();
+        buildGameTable(props.data);
     },
     [])
 
