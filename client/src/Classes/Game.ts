@@ -1,6 +1,6 @@
 class Game{
 
-    constructor(players: string[], winner: string[], tournament: string, matchup: string, youtubelink: string, date: string, gamenum: string, map: string, scraces: string[]){
+    constructor(players: string[], winner: string[], tournament: string, matchup: string, youtubelink: string, date: string, gamenum: number, map: string, scraces: string[]){
         this.players = players;
         this.winner = winner;
         this.tournament = tournament;
@@ -17,7 +17,7 @@ class Game{
     matchup: string; 
     youtubelink: string; 
     date: string;
-    gamenum: string;
+    gamenum: number;
     map: string;
     scraces: string[];
 
