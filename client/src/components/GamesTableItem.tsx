@@ -8,6 +8,7 @@ function GamesTableItem(props: any){
 
 
     return(<tr>
+        <td>{props.listNum}</td>
         <td>{props.date}</td>
         <td>{props.tournament}</td>
         <td>{props.gameNum}</td>

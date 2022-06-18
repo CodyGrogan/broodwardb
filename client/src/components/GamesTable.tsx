@@ -26,7 +26,9 @@ function GamesTable(props: any){
     useEffect(()=>{
         buildGameTable(gameData);
     },
-    [gameData])
+    [gameData, displayedRows, buildGameTable])
+
+    
 
     function getGameTable(){
         fetch(`/api/allgames/`).then(response => response.json()).then(data =>{
@@ -414,7 +416,26 @@ function GamesTable(props: any){
 
         let jsxArr: JSX.Element[] = [];
 
-        for (let i = 0; i < data.length; i++){
+        let length: number = gameData.length;
+
+        //this code should prevent the table from loading more rows than should be currently shown, but never go over the player list length
+        if (gameData.length > displayedRows){
+            length = displayedRows;
+            let button = document.getElementById('loadMorePlayers') as HTMLElement;
+            button.hidden = false;
+            let allbutton = document.getElementById('loadAllPlayers') as HTMLElement;
+            allbutton.hidden = false;
+
+        }
+        else if (displayedRows > gameData.length){
+            let button = document.getElementById('loadMorePlayers') as HTMLElement;
+            button.hidden = true;
+
+            let allbutton = document.getElementById('loadAllPlayers') as HTMLElement;
+            allbutton.hidden = true;
+        }
+
+        for (let i = 0; i < length; i++){
             let opponentName: string;
             let winner: string = data[i].winner[0];
             let loser: string = "";
@@ -431,7 +452,9 @@ function GamesTable(props: any){
 
             }
 
-            let newjsx = <GamesTableItem date = {data[i].date} tournament={data[i].tournament} winner ={winner} loser={loser} map = {data[i].map} gameNum={data[i].gamenum} youtubelink={data[i].youtubelink}/>
+            let listNum = i + 1;
+
+            let newjsx = <GamesTableItem listNum={listNum} date = {data[i].date} tournament={data[i].tournament} winner ={winner} loser={loser} map = {data[i].map} gameNum={data[i].gamenum} youtubelink={data[i].youtubelink}/>
 
             jsxArr.push(newjsx);
 
@@ -441,13 +464,20 @@ function GamesTable(props: any){
 
     }
 
-
+    function loadMoreRows(){
+        setDisplayedRows(displayedRows+20);
+    }
+    function loadAllRows(){
+        setDisplayedRows(10000);
+        
+    }
 
     return(
         <div>
             <table className="table">
                 <thead>
                     <tr>
+                        <th>#</th>
                         <th><button onClick={()=>sortByDate()} className="btn btn-info">Date</button> </th>
                         <th><button onClick={()=>sortByTourny()} className="btn btn-info">Tournament</button></th>
                         <th><button onClick={()=>sortByNum()} className="btn btn-info">Game Number</button></th>
@@ -465,6 +495,9 @@ function GamesTable(props: any){
 
                 </tbody>
             </table>
+            <button id="loadMorePlayers" onClick={()=>loadMoreRows()} className="btn btn-primary">Load More</button>
+            <button id="loadAllPlayers" onClick={()=>loadAllRows()} className="btn btn-primary">Load All</button>
+
         </div>
     )
 }
