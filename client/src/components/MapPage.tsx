@@ -174,7 +174,10 @@ function MapPage(){
                             <div className="card-header">
                             {thisMap?.name}
                             </div>
+                            <img className='card-img-top' src={`/images/${thisMap?.name}.jpg`}></img>
                             <div className="card-body">
+
+                                
                         
                             Max Players: {thisMap?.maxPlayers} <br/>
                             Games Played: {gameData.length} <br/>
