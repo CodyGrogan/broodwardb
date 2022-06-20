@@ -5,7 +5,7 @@ function TournamentTableItem(props: any){
     let tournyLink = `/tournament/${props.name}`;
     let winnerLink = `/player/${props.winner}`;
 
-    let loserLink = `/player/${props.loser}`;
+    let loserLink = `/player/${props.runnerup}`;
 
     
     return(

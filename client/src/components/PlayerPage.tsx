@@ -30,7 +30,19 @@ interface MatchupWinrate {
 
 }
 
-let defaultLineData: MatchupWinrate[] = [{year: '2020', vT: 55, vP: 66, vZ: 63}, {year: '2021', vT: 88, vP: 44, vZ: 22}, {year: '2022', vT: 63, vP: 51, vZ: 63}]
+interface GameYear{
+    year: string,
+    data: Game[]
+
+}
+
+interface yearRate{
+    year: string,
+    winRate: number;
+}
+
+
+let defaultLineData: MatchupWinrate[] = [{year: '2020', vT: 0, vP: 0, vZ: 0}]
 
 function PlayerPage(){
 
@@ -66,7 +78,7 @@ function PlayerPage(){
         })
     }
 
-    function parseGameData(gameData: Game[]){
+    function parseGameData(data: Game[]){
 
         let totalWins = 0;
         let totalLosses = 0;
@@ -76,38 +88,116 @@ function PlayerPage(){
         let vZGames: Game[] = [];
         let vPGames: Game[] = [];
 
-        for (let i = 0; i < gameData.length; i++){
+        for (let i = 0; i < data.length; i++){
 
             let opponentRace;
 
-            if (gameData[i].winner[0] == thisPlayer?.name){
+            if (data[i].winner[0] == thisPlayer?.name){
                 totalWins++
             }
             else{
                 totalLosses++
             }
 
-            if (gameData[i].players[0] != thisPlayer?.name){
-                opponentRace = gameData[i].scraces[0];
+            if (data[i].players[0] != thisPlayer?.name){
+                opponentRace = data[i].scraces[0];
                 
             }
             else{
-                opponentRace = gameData[i].scraces[1];
+                opponentRace = data[i].scraces[1];
             }
 
             if (opponentRace == 'Terran'){
-                vTGames.push(gameData[i]);
+                vTGames.push(data[i]);
             }
             else if (opponentRace == 'Zerg'){
-                vZGames.push(gameData[i]);
+                vZGames.push(data[i]);
             }
             else if (opponentRace == 'Protoss'){
-                vPGames.push(gameData[i]);
+                vPGames.push(data[i]);
             }
           
         }
 
         setWinLoss([totalWins, totalLosses]);
+        
+        
+
+        //let firstYear = gameData[0].date;
+       console.log(gameData[0].date);
+       let vtYearData: yearRate[] = [];
+       let vzYearData: yearRate[] = [];
+       let vpYearData: yearRate[] = [];
+
+       console.log('vtgames length is' + vTGames.length);
+        if (vTGames.length > 0){
+              vtYearData = getYearlyWinRate(vTGames, 'Terran');
+        }
+        console.log(vtYearData);
+        if (vZGames.length > 0){
+             vzYearData = getYearlyWinRate(vZGames, 'Zerg');
+
+        }
+
+        if (vPGames.length > 0){
+             vpYearData = getYearlyWinRate(vPGames, 'Protoss');
+        }
+      
+
+
+       let yearMap: Map<string, boolean> = new Map();
+
+       for (let i = 0; i < vtYearData.length; i++){
+        yearMap.set(vtYearData[i].year, true);
+       }
+       for (let i = 0; i < vpYearData.length; i++){
+        yearMap.set(vpYearData[i].year, true);
+       }
+       for (let i = 0; i < vzYearData.length; i++){
+        yearMap.set(vzYearData[i].year, true);
+       }
+
+       let yearKeys = Array.from(yearMap.keys());
+       yearKeys.sort();
+
+       console.log(yearKeys);
+    
+       let winRateOverTime: MatchupWinrate[] = [];
+
+       for (let i = 0; i < yearKeys.length; i++){
+
+        let vtWinRate: number = 0;
+        let vzWinRate: number = 0;
+        let vpWinRate: number = 0;
+
+
+
+        let vtrate = vtYearData.find(({ year }) => year == yearKeys[i] );
+        let vzrate = vzYearData.find(({ year }) => year == yearKeys[i] );
+        let vprate = vpYearData.find(({ year }) => year == yearKeys[i] );
+
+
+        if (vtrate != null && vtrate != undefined){
+            // if the vtrate to be found is null, provide a value of 0 instead
+            vtWinRate = vtrate.winRate;
+        }
+        if (vzrate != null && vzrate != undefined){
+            // if the vtrate to be found is null, provide a value of 0 instead
+            vzWinRate = vzrate.winRate;
+        }
+        if (vprate != null && vprate != undefined){
+            // if the vtrate to be found is null, provide a value of 0 instead
+            vpWinRate = vprate.winRate;
+        }
+
+
+        let newMatchup: MatchupWinrate = {year: yearKeys[i], vT: vtWinRate, vP: vpWinRate , vZ: vzWinRate};
+        winRateOverTime.push(newMatchup);
+       }
+
+       console.log(winRateOverTime);
+       setLineData(winRateOverTime);
+
 
        let vTWin = getWinRate(vTGames, 'Terran');
        let vZWin = getWinRate(vZGames, 'Zerg');
@@ -116,6 +206,7 @@ function PlayerPage(){
        let winrates: PlayerWinRates = {vT: vTWin, vZ: vZWin, vP: vPWin};
        setWinRates(winrates);
 
+       
   
 
 
@@ -189,36 +280,30 @@ function PlayerPage(){
 
 
 
-    function getYearlyWinRate(gameData: Game[], race: string){
+    function getYearlyWinRate(data: Game[], race: string){
 
-        interface GameYear{
-            year: string,
-            data: Game[]
+        console.log('getting yearly win rate')
 
-        }
-
-        interface yearRate{
-            year: string,
-            winRate: number;
-        }
+      
+        let firstYear = data[0].date.slice(0,4);
+        console.log(firstYear);
+        let years: GameYear[] = [{year: firstYear, data: [data[0]]}];
+        console.log(years);
         
-        let firstYear = gameData[0].date.slice(0,4);
-        let years: GameYear[] = [{year: firstYear, data: [gameData[0]]}];
-        
-        for (let i = 1; i < gameData.length; i++){
+        for (let i = 1; i < data.length; i++){
 
-            let yearString = gameData[i].date.slice(0,4);
+            let yearString = data[i].date.slice(0,4);
             let yearFound = false;
 
             for (let j = 0; j < years.length; j++){
                 if (yearString == years[j].year){
-                    years[j].data.push(gameData[i]);
+                    years[j].data.push(data[i]);
                     yearFound = true;
                 }
             }
 
             if (yearFound == false){
-                let newYear: GameYear = {year: yearString, data: [gameData[i]]};
+                let newYear: GameYear = {year: yearString, data: [data[i]]};
                 years.push(newYear);
             }
 
@@ -236,6 +321,7 @@ function PlayerPage(){
         }
 
         console.log(YearRateArr);
+        return YearRateArr;
 
 
     }
@@ -260,7 +346,8 @@ function PlayerPage(){
 
     useEffect(()=>{
 
-        if (gameData != undefined){
+        if (gameData != undefined && gameData.length != 0){
+         
         parseGameData(gameData);
         }
     },
