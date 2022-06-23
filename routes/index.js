@@ -250,11 +250,35 @@ async function resetElo(){
 
 }
 
+
+
 async function updateElo(reverse){
 
   let playerList = await getAllPlayers();
   console.log(playerList);
   let gameList = await getAllGames();
+
+  
+  gameList.sort(function(a, b) {
+    let dateA = a.date; // ignore upper and lowercase
+    let dateB = b.date; // ignore upper and lowercase
+
+    console.log("dates" + dateA + ' ' + dateB);
+
+    
+
+    if (dateA < dateB) {
+      return -1;
+    }
+    if (dateA > dateB) {
+      return 1;
+    }
+  
+    // names must be equal
+    return 0;
+  });
+
+  
 
   if (reverse == true){
     playerList.reverse();
@@ -282,6 +306,15 @@ async function updateElo(reverse){
           result = 1;
         }
 
+
+
+        //I want to add slightly more points for winning a game due to low total game counts for some players
+        let bonus = 0;
+        if (result == 1){
+          bonus = 3;
+
+        }
+
         console.log('Opponent is' + opponent);
 
        let opponentData = playerList.find(({name}) => name ===opponent );
@@ -294,7 +327,7 @@ async function updateElo(reverse){
        let eloresultandchance = result - eloWinChance
        eloresultandchance = eloresultandchance * 40;
        console.log(eloresultandchance);
-       playerElo = playerElo + eloresultandchance
+       playerElo = playerElo + eloresultandchance + bonus;
        playerElo = Math.round(playerElo);
        console.log(playerName + ' ' + playerElo);
        playerList[i].elo = playerElo;
