@@ -50,7 +50,6 @@ function MapsPage(){
             <br/>            
             <br/>
 
-            this is the maps page
             <table className='table'>
                         <thead>
                                 <tr>

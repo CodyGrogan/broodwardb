@@ -39,7 +39,6 @@ function GamesPage(){
             <br/>            
             <br/>
 
-            this is the games page
             {gameTable}
             
         </div>
