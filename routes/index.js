@@ -282,6 +282,8 @@ async function updateElo(reverse){
           result = 1;
         }
 
+        console.log('Opponent is' + opponent);
+
        let opponentData = playerList.find(({name}) => name ===opponent );
 
        let opponentElo = opponentData.elo;
