@@ -198,8 +198,7 @@ router.get('/api/updateElo', function(req, res){
   
 
   //the second time the calculation is done backwards to make sure there was already a set elo for every player
-  updateElo(false);
-  updateElo(true);
+  updateEloInOrder();
 
   res.sendStatus(200);
 
@@ -358,6 +357,92 @@ async function updateElo(reverse){
   }
 
 
+
+}
+
+
+async function updateEloInOrder(){
+
+  let playerList = await getAllPlayers();
+  console.log(playerList);
+  let gameList = await getAllGames();
+
+  
+  gameList.sort(function(a, b) {
+    let dateA = a.date; // ignore upper and lowercase
+    let dateB = b.date; // ignore upper and lowercase
+
+    
+
+    if (dateA < dateB) {
+      return -1;
+    }
+    if (dateA > dateB) {
+      return 1;
+    }
+  
+    // names must be equal
+    return 0;
+  });
+
+  
+
+  for (let i = 0; i < gameList.length; i++){
+
+    let winnerProfile = playerList.find(({ name }) => name == gameList[i].winner[0] );
+
+    let loser;
+
+    if (gameList[i].players[0] == winnerProfile.name){
+      loser = gameList[i].players[1]
+    }
+    else{
+      loser = gameList[i].players[0]
+    }
+
+    console.log(`winner ${gameList[i].winner[0]}  loser ${loser}`);
+
+    loserProfile = playerList.find(({ name }) => name == loser);
+    // calculate elo
+    let newWinnerElo = eloCalculate(winnerProfile.elo, loserProfile.elo, 1);
+    let newLoserElo = eloCalculate(loserProfile.elo, winnerProfile.elo, 0);
+
+    winnerProfile.elo = newWinnerElo;
+    loserProfile.elo = newLoserElo;
+    
+
+  }
+
+  for (let i = 0; i < playerList.length; i++){
+
+    PlayerModel.findOne({name: playerList[i].name}, function (err, docs) {
+      if(err){
+        console.log(err);
+  
+      }
+      docs.elo = playerList[i].elo;
+      docs.save();
+    });
+
+
+  }
+}
+
+function eloCalculate(playerElo, opponentElo, result){
+
+ 
+  //result should be 1 for a win, 0 for a loss;
+
+  console.log(`starting elo winner ${playerElo} loser ${opponentElo}`)
+
+  let eloWinChance = 1 / (1 + Math.pow(10, (opponentElo - playerElo)/400));
+       console.log(eloWinChance);
+       let eloresultandchance = result - eloWinChance
+       eloresultandchance = eloresultandchance * 40;
+       console.log(eloresultandchance);
+       playerElo = playerElo + eloresultandchance;
+       playerElo = Math.round(playerElo);
+       return playerElo;
 
 }
 
