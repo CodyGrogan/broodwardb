@@ -5,12 +5,14 @@ function GamesTableItem(props: any){
 
     let winnerLink = `/player/${props.winner}`
     let loserLink = `/player/${props.loser}`
+    let tournyLink = `/tournament/${props.tournament}`
+
 
 
     return(<tr>
         <td>{props.listNum}</td>
         <td>{props.date}</td>
-        <td>{props.tournament}</td>
+        <td><Link to={tournyLink}>{props.tournament}</Link></td>
         <td>{props.gameNum}</td>
         <td><Link to={winnerLink}>{props.winner}</Link></td>
         <td><Link to={loserLink}>{props.loser}</Link></td>
