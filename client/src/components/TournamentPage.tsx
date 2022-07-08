@@ -530,7 +530,7 @@ function TournamentPage(props: any){
 
                         <div className="card">
                             <div className="card-header">
-                            <strong>Matchups</strong>
+                            <strong>Matchups Played</strong>
                             </div>
                             <div className="card-body">
                         

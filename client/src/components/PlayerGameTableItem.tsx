@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function PlayerGameTableItem(props: any){
 
- let [gameResult, setGameResult] = useState<JSX.Element>()
+ const [gameResult, setGameResult] = useState<JSX.Element>()
 
  let gameWinResult = <td className="Win-Result">{props.result}</td>
  let gameLoseResult = <td className="Lose-Result">{props.result}</td>
@@ -29,6 +29,17 @@ function PlayerGameTableItem(props: any){
 
  },
  [])
+
+ useEffect(()=>{
+    if (props.result == "Win"){
+        setGameResult(gameWinResult);
+    }
+    else{
+        setGameResult(gameLoseResult);
+    }
+
+},
+[props.result])
 
 
     return(
