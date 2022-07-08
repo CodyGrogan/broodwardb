@@ -27,6 +27,7 @@ interface MatchupWinrate {
     vZ: number;
 
     vP: number;
+    All: number;
 
 }
 
@@ -42,7 +43,7 @@ interface yearRate{
 }
 
 
-let defaultLineData: MatchupWinrate[] = [{year: '2020', vT: 0, vP: 0, vZ: 0}]
+let defaultLineData: MatchupWinrate[] = [{year: '2020', vT: 0, vP: 0, vZ: 0, All: 0}]
 
 function PlayerPage(){
 
@@ -128,6 +129,10 @@ function PlayerPage(){
        let vtYearData: yearRate[] = [];
        let vzYearData: yearRate[] = [];
        let vpYearData: yearRate[] = [];
+       let totalYearData: yearRate[] = [];
+
+
+        totalYearData = getYearlyWinRate(data, 'All');
 
        console.log('vtgames length is' + vTGames.length);
         if (vTGames.length > 0){
@@ -157,6 +162,8 @@ function PlayerPage(){
         yearMap.set(vzYearData[i].year, true);
        }
 
+
+
        let yearKeys = Array.from(yearMap.keys());
        yearKeys.sort();
 
@@ -169,12 +176,15 @@ function PlayerPage(){
         let vtWinRate: number = 0;
         let vzWinRate: number = 0;
         let vpWinRate: number = 0;
+        let allWinRate: number = 0;
 
 
 
         let vtrate = vtYearData.find(({ year }) => year == yearKeys[i] );
         let vzrate = vzYearData.find(({ year }) => year == yearKeys[i] );
         let vprate = vpYearData.find(({ year }) => year == yearKeys[i] );
+        let allrate = totalYearData.find(({year}) => year == yearKeys[i]);
+
 
 
         if (vtrate != null && vtrate != undefined){
@@ -190,8 +200,13 @@ function PlayerPage(){
             vpWinRate = vprate.winRate;
         }
 
+        if (allrate != null && allrate != undefined){
+            // if the vtrate to be found is null, provide a value of 0 instead
+            allWinRate = allrate.winRate;
+        }
 
-        let newMatchup: MatchupWinrate = {year: yearKeys[i], vT: vtWinRate, vP: vpWinRate , vZ: vzWinRate};
+
+        let newMatchup: MatchupWinrate = {year: yearKeys[i], vT: vtWinRate, vP: vpWinRate , vZ: vzWinRate, All: allWinRate};
         winRateOverTime.push(newMatchup);
        }
 
@@ -400,12 +415,12 @@ function PlayerPage(){
                                     <table className='table'>
                                         <thead>
                                     <tr>
-                                        <th>Date</th>
-                                        <th>Opponent</th>
-                                        <th>Result</th>
-                                        <th>Map</th>
-                                        <th>Tourny</th>
-                                        <th>Link</th>
+                                       <th><button className='btn btn-info'>Date</button> </th>
+                                       <th><button className='btn btn-info'>  Opponent</button> </th> 
+                                          <th><button className='btn btn-info'>Result</button> </th> 
+                                        <th><button className='btn btn-info'>Map</button> </th> 
+                                        <th><button className='btn btn-info'>Tourny</button> </th> 
+                                       <th><button className='btn btn-info'>Link</button> </th>
 
 
                                         
