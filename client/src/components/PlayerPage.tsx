@@ -407,6 +407,27 @@ function PlayerPage(){
                     </div>
 
                     <div className="col-sm-9">
+
+
+                        
+                                    <div className="col-sm-9">
+
+                    <div className="card">
+                            <div className="card-header">
+                        
+                                Matchup Win Rates
+                            
+
+                            </div>
+
+                            <div className="card-body">
+                            <WinRateLine data={lineData} />
+                            </div>
+                        </div>
+
+                    </div>
+
+
                         <div className="card">
                                 <div className="card-header">
                                 Game History
@@ -441,22 +462,6 @@ function PlayerPage(){
 
                 <div className="row justify-content-start">
 
-                <div className="col-sm-9">
-
-                            <div className="card">
-                                    <div className="card-header">
-                                  
-                                        Matchup Win Rates
-                                      
-
-                                    </div>
-
-                                    <div className="card-body">
-                                    <WinRateLine data={lineData} />
-                                    </div>
-                                </div>
-
-                        </div>
 
                 </div>
 
