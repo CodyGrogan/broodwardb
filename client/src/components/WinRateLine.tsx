@@ -118,10 +118,11 @@ export default class WinRateLine extends PureComponent<chartProps, state> {
           </YAxis>
           <Tooltip />
           <Legend />
-          <Line type="monotone" name='vT' dataKey="vT" stroke="#8884d8" activeDot={{ r: 8 }} />
+          <Line type="monotone" name='All' dataKey="All" stroke="#fc7b03" activeDot={{ r: 8 }}/>
+          <Line type="monotone" name='vT' dataKey="vT" stroke="#8884d8"  />
           <Line type="monotone" name='vZ' dataKey="vZ" stroke='#9005a6' />
           <Line type="monotone" name='vP' dataKey="vP" stroke="#069401" />
-          <Line type="monotone" name='All' dataKey="All" stroke="#fc7b03" />
+          
 
          
         </LineChart>

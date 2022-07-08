@@ -51,7 +51,9 @@ function PlayerGameTableItem(props: any){
             </td>
 
             <td>
-                <a href={props.youtubelink} target="_blank">Link</a>
+                <a href={props.youtubelink} target="_blank"><span className="material-icons">
+smart_display
+</span></a>
             </td>
 
         </tr>

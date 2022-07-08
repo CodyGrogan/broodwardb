@@ -10,6 +10,7 @@ import TournamentPlayerTableItem from "./TournamentPlayerTableItem";
 import SCRacePieChart from "./SCRacePieChart";
 import MatchupBarChart from "./MatchupBarChart";
 import GamesTable from "./GamesTable";
+import TournamentWinRateChart from "./TournamentWinRateChart";
 
 function TournamentPage(props: any){
 
@@ -23,6 +24,12 @@ function TournamentPage(props: any){
       
       }
 
+      interface WinRateData{
+        tvz: number,
+        tvp: number,
+        pvz: number
+    }
+
     const [thisTournament, setThisTournament] = useState<Tournament>();
     const [gameData, setGameData] = useState<Game[]>();
     const [spoilerTable, setSpoilerTable] = useState<JSX.Element[]>();
@@ -31,6 +38,9 @@ function TournamentPage(props: any){
     const [racePie, setRacePie] = useState<JSX.Element[]>();
     const [matchupData, setMatchupData] = useState<Matchup[]>();
     const [barChart, setBarChart] = useState<JSX.Element[]>();
+    const [winData, setWinData] = useState<Matchup[]>();
+    const [winBarChart, setWinBarChart] = useState<JSX.Element[]>();
+
 
     const [tournamentName, setTournamentName] = useState<string>("");
 
@@ -177,6 +187,79 @@ function TournamentPage(props: any){
 
     }
 
+    function parseGameData(gameData: Game[]){
+
+        let tvpGames: Game[] = [];
+        let tvzGames: Game[] = [];
+        let pvzGames: Game[] = [];
+        let mirrors: Game[] = [];
+
+        for (let i = 0; i < gameData.length; i++){
+            if (gameData[i].matchup == 'TvP'){
+                tvpGames.push(gameData[i]);
+            }
+            else if (gameData[i].matchup == 'TvZ'){
+                tvzGames.push(gameData[i]);
+            }
+            else if (gameData[i].matchup == 'PvZ'){
+                pvzGames.push(gameData[i]);
+            }
+            else {
+                mirrors.push(gameData[i]);
+            }
+        }
+
+       let tvpWin = getWinRate(tvpGames, 'Terran');
+       let tvzWin = getWinRate(tvzGames, 'Terran');
+       let pvzWin = getWinRate(pvzGames, 'Protoss');
+
+       let tvpMatch: Matchup = {name: 'TvP', value: tvpWin};
+       let tvzMatch: Matchup = {name: 'TvZ', value: tvzWin};
+       let pvzMatch: Matchup = {name: 'PvZ', value: pvzWin};
+
+
+       let windata = [tvpMatch, tvzMatch, pvzMatch];
+
+       setWinData(windata);
+
+
+
+    }
+
+    function getWinRate(data: Game[], raceOne: string){
+        let race1wins = 0;
+        for (let i = 0; i < data.length; i ++){
+            
+            let winnerrace: string = '';
+
+
+
+            //check race of game winner
+
+            if (data[i].winner[0] == data[i].players[0]){
+                winnerrace = data[i].scraces[0];
+            }
+            else{
+                winnerrace = data[i].scraces[1];
+
+            }
+
+            if (winnerrace == raceOne){
+                race1wins++
+            }
+
+
+        }
+
+        let percentWins = race1wins / data.length;
+        console.log(percentWins);
+         percentWins = Math.round(percentWins*100);
+         console.log(percentWins);
+
+         return percentWins;
+
+    }
+
 
     useEffect(()=>{
 
@@ -215,10 +298,20 @@ function TournamentPage(props: any){
         setRankTable(buildRankTable(thisTournament, raceMap));
         getRaceNumbers(raceMap);
         getMatchupData(gameData);
+        parseGameData(gameData);
 
         }
     },
-    [gameData, thisTournament])
+    [gameData, thisTournament]);
+
+    useEffect(()=>{
+
+        if (winData!=undefined){
+            setWinBarChart([<TournamentWinRateChart data = {winData}/>]);
+        }
+
+    },
+    [winData]);
 
     function buildPlayerTable(raceMap: Map<string, string>){
         let playerArr = [];
@@ -273,6 +366,8 @@ function TournamentPage(props: any){
         return raceMap;
      
     }
+
+
     
     return(
         <div>
@@ -440,6 +535,23 @@ function TournamentPage(props: any){
                             <div className="card-body">
                         
                              {barChart}
+
+                            </div>
+                        </div>
+
+                        </div>
+
+
+                        <div className="col-sm-6">
+
+
+                         <div className="card">
+                            <div className="card-header">
+                            <strong>Race Winrate</strong>
+                            </div>
+                            <div className="card-body">
+                        
+                             {winBarChart}
 
                             </div>
                         </div>
