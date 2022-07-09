@@ -78,6 +78,42 @@ function PlayerPage(){
         fetch(`/api/gamewithplayer/${thisPlayer?.name}`).then(response => response.json()).then(data =>{
             console.log('received game data json');
             console.log(data);
+
+            // initial sort by gamenum then date
+
+            data.sort(function(a: Game, b: Game) {
+                let numA = a.gamenum; // ignore upper and lowercase
+                let numB = b.gamenum; // ignore upper and lowercase
+
+                if (numA > numB) {
+                  return -1;
+                }
+                if (numA < numB) {
+                  return 1;
+                }
+              
+                // names must be equal
+                return 0;
+              });
+
+            data.sort(function(a: Game, b: Game) {
+                let dateA = a.date; // ignore upper and lowercase
+                let dateB = b.date; // ignore upper and lowercase
+
+                dateA.replaceAll('-', '');
+                dateB.replaceAll('-', '');
+
+                if (dateA > dateB) {
+                  return -1;
+                }
+                if (dateA < dateB) {
+                  return 1;
+                }
+              
+                // names must be equal
+                return 0;
+              });
+            setSortedByDate(true);
             setGameData(data);
         }).catch((error)=>{
             console.log('error: ' + error);
@@ -412,6 +448,22 @@ function PlayerPage(){
                 setSortedByDate(true);
                 setSortedByLoser(false);
 
+                //sort by num first then date
+
+                sortedList.sort(function(a: Game, b: Game) {
+                    let numA = a.gamenum; // ignore upper and lowercase
+                    let numB = b.gamenum; // ignore upper and lowercase
+    
+                    if (numA > numB) {
+                      return -1;
+                    }
+                    if (numA < numB) {
+                      return 1;
+                    }
+                  
+                    // names must be equal
+                    return 0;
+                  });
          
 
 
