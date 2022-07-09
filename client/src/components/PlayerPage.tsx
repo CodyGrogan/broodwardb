@@ -60,6 +60,9 @@ function PlayerPage(){
     const [sortedByDate, setSortedByDate] = useState<Boolean>(false);
     const [sortedByMap, setSortedByMap] = useState<Boolean>(false);
 
+    const [displayedRows, setDisplayedRows] = useState<number>(20);
+
+
 
     let { id } = useParams(); //this actually uses names to query
 
@@ -179,9 +182,9 @@ function PlayerPage(){
 
     }
 
-    function sortByLoser(){
+    function sortByOpponent(){
 
-        console.log('sort by winner pressed')
+        console.log('sort by opponent pressed')
 
         if (gameData != null){
             let sortedList = gameData.splice(0);
@@ -197,42 +200,43 @@ function PlayerPage(){
          
 
 
+             
+         
+            //this code will determine who the opponent is
+            //this will need to be modified if 2v2 games are later included
+         
 
             sortedList.sort(function(a: Game, b: Game) {
 
-                let winnerA: string = a.winner[0];
-                let loserA: string = "";
+                let opponentA: string;
+                let opponentB: string;
+
+                if (a.players[0] != thisPlayer?.name){
+                    opponentA = a.players[0];
+                    
+                }
+                else{
+                    opponentA = a.players[1];
+                }
+
+
+                if (b.players[0] != thisPlayer?.name){
+                    opponentB = b.players[0];
+                    
+                }
+                else{
+                    opponentB = b.players[1];
+                }
 
 
 
-            //this code check if this player won in game A
-
-            if (a.winner[0] == a.players[0]){
-                loserA = a.players[1];
-            }
-            else{
-                loserA = a.players[0];
-
-            }
-
-
-            let winnerB: string = a.winner[0];
-            let loserB: string = "";
 
 
 
-        //this code check if this player won in game B
+      
 
-        if (b.winner[0] == b.players[0]){
-            loserB = b.players[1];
-        }
-        else{
-            loserB = b.players[0];
-
-        }
-
-                const nameA = loserA.toUpperCase(); // ignore upper and lowercase
-                const nameB = loserB[0].toUpperCase(); // ignore upper and lowercase
+                const nameA = opponentA.toUpperCase(); // ignore upper and lowercase
+                const nameB = opponentB.toUpperCase(); // ignore upper and lowercase
                 if (nameA < nameB) {
                   return -1;
                 }
@@ -690,7 +694,27 @@ function PlayerPage(){
         console.log('building table');
         console.log(data);
 
-        for (let i = 0; i < data.length; i++){
+        let length: number = gameData.length;
+
+        //this code should prevent the table from loading more rows than should be currently shown, but never go over the player list length
+        if (gameData.length > displayedRows){
+            length = displayedRows;
+            let button = document.getElementById('loadMorePlayers') as HTMLElement;
+            button.hidden = false;
+            let allbutton = document.getElementById('loadAllPlayers') as HTMLElement;
+            allbutton.hidden = false;
+
+        }
+        else if (displayedRows > gameData.length){
+            let button = document.getElementById('loadMorePlayers') as HTMLElement;
+            button.hidden = true;
+
+            let allbutton = document.getElementById('loadAllPlayers') as HTMLElement;
+            allbutton.hidden = true;
+        }
+
+
+        for (let i = 0; i < length; i++){
             let opponentName: string;
             let result: string = "";
 
@@ -801,9 +825,15 @@ function PlayerPage(){
         parseGameData(gameData);
         }
     },
-    [gameData]);
+    [gameData, displayedRows]);
 
-    
+    function loadMoreRows(){
+        setDisplayedRows(displayedRows+20);
+    }
+    function loadAllRows(){
+        setDisplayedRows(10000);
+        
+    }
     return(
         <div>
                 <Navbar/>
@@ -872,10 +902,10 @@ function PlayerPage(){
                                         <thead>
                                     <tr>
                                        <th><button onClick={()=>sortByDate()} className='btn btn-info'>Date</button> </th>
-                                       <th><button className='btn btn-info'>  Opponent</button> </th> 
+                                       <th><button onClick={()=>sortByOpponent()} className='btn btn-info'>  Opponent</button> </th> 
                                           <th><button onClick={()=>sortByWinner()} className='btn btn-info'>Result</button> </th> 
-                                        <th><button className='btn btn-info'>Map</button> </th> 
-                                        <th><button className='btn btn-info'>Tourny</button> </th> 
+                                        <th><button onClick={()=>sortByMap()}  className='btn btn-info'>Map</button> </th> 
+                                        <th><button onClick={()=>sortByTourny()}  className='btn btn-info'>Tourny</button> </th> 
                                        <th><button className='btn btn-info'>Link</button> </th>
 
 
@@ -889,6 +919,9 @@ function PlayerPage(){
                                     </tbody>
 
                                     </table>
+                                    <button id="loadMorePlayers" onClick={()=>loadMoreRows()} className="btn btn-primary">Load More</button>
+            <button id="loadAllPlayers" onClick={()=>loadAllRows()} className="btn btn-primary">Load All</button>
+
                                 </div>
                         </div>
                        
