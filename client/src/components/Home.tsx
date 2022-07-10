@@ -8,6 +8,7 @@ import SCRacePieChart from "./SCRacePieChart";
 import Tournament from "../Classes/Tournament";
 import Top10 from "./Top10";
 import TotalRaceWinRateLine from "./TotalRaceWinRateLine";
+import { Link } from "react-router-dom";
 
 function Home(){
 
@@ -438,7 +439,7 @@ function Home(){
                     <div className="col-s-6">
                         Welcome to Brood War DB, a database of modern professional Starcraft Brood War players and tournaments. This project was inspired by the now defunct TLPD and was created as an excerise in building a React front end and a back end using NodeJS and MongoDB.
                         <br/>
-                        This database includes a collection of {PlayerList.length} players, and {gameData.length} games played across {tournamentData.length} tournaments.
+                        This database includes a collection of {PlayerList.length} <Link to={'/players'}>players</Link>, and {gameData.length} <Link to={'/games'}>games</Link> played across {tournamentData.length} <Link to={'/tournaments'}>tournaments</Link>.
 
 
                     </div>
