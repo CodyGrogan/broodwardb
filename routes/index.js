@@ -206,6 +206,20 @@ router.get('/api/updateElo', function(req, res){
   
 });
 
+router.get('/api/updatemaps', function(req, res){
+
+  console.log("received update map request");
+  
+
+  //the second time the calculation is done backwards to make sure there was already a set elo for every player
+  updateMapData();
+
+  res.sendStatus(200);
+
+  
+  
+});
+
 router.get('/api/resetElo', function(req, res){
 
   console.log("received reset Elo request");
@@ -229,6 +243,15 @@ async function getAllGames(){
  
   return query;
 
+}
+
+async function getAllMaps(){
+  
+    let query = await MapModel.find({});
+   
+    return query;
+  
+  
 }
 
 async function resetElo(){
@@ -444,6 +467,35 @@ function eloCalculate(playerElo, opponentElo, result){
        playerElo = Math.round(playerElo);
        return playerElo;
 
+}
+
+async function updateMapData(){
+  
+  let mapList = await getAllMaps();
+  let gameData = await getAllGames();
+
+  for (let i = 0; i < gameData.length; i++){
+    let mapName = gameData[i].map;
+    console.log(mapName);
+
+    let mapdata = mapList.find(({ name }) => name == mapName);
+    console.log(mapdata);
+    mapdata.gamesPlayed = mapdata.gamesPlayed + 1;
+  }
+
+  for (let i = 0; i < mapList.length; i++){
+
+    MapModel.findOne({name: mapList[i].name}, function (err, docs) {
+      if(err){
+        console.log(err);
+  
+      }
+      docs.gamesPlayed = mapList[i].gamesPlayed;
+      docs.save();
+    });
+
+  }
+  
 }
 
 

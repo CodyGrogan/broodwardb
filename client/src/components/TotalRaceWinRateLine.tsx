@@ -118,8 +118,8 @@ export default class TotalRaceWinRateLine extends PureComponent<chartProps, stat
           <Legend />
 
           <Line type="monotone" name='TvZ' dataKey="TvP" stroke="#8884d8"  />
-          <Line type="monotone" name='TvP' dataKey="TvZ" stroke='#9005a6' />
-          <Line type="monotone" name='PvZ' dataKey="PvZ" stroke="#069401" />
+          <Line type="monotone" name='TvP' dataKey="TvZ" stroke="#069401" />
+          <Line type="monotone" name='PvZ' dataKey="PvZ" stroke='#9005a6' />
           
 
          
