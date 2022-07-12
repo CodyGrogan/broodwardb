@@ -6,6 +6,7 @@ var mongoose = require('mongoose');
 var mongopassword = process.env.MONGOPASS;
 var mongouser = process.env.MONGOUSER
 let database = process.env.USEDB;
+let masterApiKey = process.env.APIKEY
 var mongodb = 'mongodb+srv://'+ mongouser + ':'+ mongopassword +'@sandbox.o8c7z.mongodb.net/'+ database +'?retryWrites=true&w=majority';
 mongoose.connect(mongodb, {useNewUrlParser: true, useUnifiedTopology: true});
 
@@ -17,6 +18,7 @@ const GameModel = require('../models/GameModel');
 const TournamentModel = require('../models/TournamentModel');
 const res = require('express/lib/response');
 const MapModel = require('../models/MapModel');
+const { send, sendStatus } = require('express/lib/response');
 
 
 
@@ -193,41 +195,62 @@ router.get('/api/getonetournament/:name', function(req, res){
 });
 
 
-router.get('/api/updateElo', function(req, res){
+router.get('/api/updateElo/:apikey', function(req, res){
 
   console.log("received update Elo request");
   
+  let apikey = req.params.apikey;
+  if (apikey == masterApiKey){
+
 
   //the second time the calculation is done backwards to make sure there was already a set elo for every player
   updateEloInOrder();
 
   res.sendStatus(200);
+  }
+  else{
+    res.sendStatus(403);
+  }
 
   
   
 });
 
-router.get('/api/updatemaps', function(req, res){
+router.get('/api/updatemaps/:apikey', function(req, res){
 
   console.log("received update map request");
   
+  let apikey = req.params.apikey;
+  if (apikey == masterApiKey){
 
   //the second time the calculation is done backwards to make sure there was already a set elo for every player
   updateMapData();
 
   res.sendStatus(200);
+  }
+  else{
+    res.sendStatus(403);
+  }
 
   
   
 });
 
-router.get('/api/resetElo', function(req, res){
+router.get('/api/resetElo/:apikey', function(req, res){
 
   console.log("received reset Elo request");
   
+  let apikey = req.params.apikey;
+  if (apikey == masterApiKey){
+
   resetElo();
   res.sendStatus(200);
 
+  }
+
+  else{
+    res.sendStatus(403);
+  }
   
   
 });
@@ -261,13 +284,17 @@ async function resetElo(){
   let playerList = await getAllPlayers();
 
   for (let i = 0; i < playerList.length; i++){
+    
   PlayerModel.findOne({name: playerList[i].name}, function (err, docs) {
     if(err){
       console.log(err);
+      sendStatus(403)
 
     }
+    else{
     docs.elo = 1500;
     docs.save();
+    }
   });
   }
 
@@ -486,7 +513,6 @@ async function updateMapData(){
     console.log(mapName);
 
     let mapdata = mapList.find(({ name }) => name == mapName);
-    console.log(mapdata);
     mapdata.gamesPlayed = mapdata.gamesPlayed + 1;
   }
 
@@ -497,8 +523,10 @@ async function updateMapData(){
         console.log(err);
   
       }
+      else{
       docs.gamesPlayed = mapList[i].gamesPlayed;
       docs.save();
+      }
     });
 
   }

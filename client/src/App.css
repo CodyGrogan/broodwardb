@@ -62,3 +62,8 @@
 .loadBtn{
   margin: 5px;
 }
+
+.navBtn:hover {
+
+  color: #0000EE !important ; 
+}
