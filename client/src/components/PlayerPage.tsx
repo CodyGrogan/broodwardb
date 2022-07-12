@@ -919,8 +919,8 @@ function PlayerPage(){
                                     </tbody>
 
                                     </table>
-                                    <button id="loadMorePlayers" onClick={()=>loadMoreRows()} className="btn btn-primary">Load More</button>
-            <button id="loadAllPlayers" onClick={()=>loadAllRows()} className="btn btn-primary">Load All</button>
+                                    <button id="loadMorePlayers" onClick={()=>loadMoreRows()} className="btn btn-primary loadBtn">Load More</button>
+            <button id="loadAllPlayers" onClick={()=>loadAllRows()} className="btn btn-primary loadBtn">Load All</button>
 
                                 </div>
                         </div>
