@@ -4,8 +4,9 @@ var path = require('path');
 
 var mongoose = require('mongoose');
 var mongopassword = process.env.MONGOPASS;
+var mongouser = process.env.MONGOUSER
 let database = process.env.USEDB;
-var mongodb = 'mongodb+srv://bwdb:'+ mongopassword +'@sandbox.o8c7z.mongodb.net/'+ database +'?retryWrites=true&w=majority';
+var mongodb = 'mongodb+srv://'+ mongouser + ':'+ mongopassword +'@sandbox.o8c7z.mongodb.net/'+ database +'?retryWrites=true&w=majority';
 mongoose.connect(mongodb, {useNewUrlParser: true, useUnifiedTopology: true});
 
 var db = mongoose.connection;
@@ -473,6 +474,12 @@ async function updateMapData(){
   
   let mapList = await getAllMaps();
   let gameData = await getAllGames();
+
+
+  //first reset maps played to zero
+  for (let i = 0; i < mapList.length; i++){
+    mapList[i].gamesPlayed = 0;
+  }
 
   for (let i = 0; i < gameData.length; i++){
     let mapName = gameData[i].map;
