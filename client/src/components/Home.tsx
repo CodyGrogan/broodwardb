@@ -553,9 +553,6 @@ function Home(){
                 </div>
                 
             </div>
-
-
-<ExDataTable />
         </div>
     )
 }
