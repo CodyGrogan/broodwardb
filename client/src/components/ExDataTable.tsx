@@ -50,9 +50,7 @@ const FilterComponent = ({ filterText, onFilter, onClear }: FilterParams) => (
             value={filterText}
             onChange={onFilter}
         />
-        <button type="button" onClick={onClear}>
-            X
-        </button>
+   
     </div>
 );
 
