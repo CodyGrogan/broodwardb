@@ -10,7 +10,6 @@ import Top10 from "./Top10";
 import TotalRaceWinRateLine from "./TotalRaceWinRateLine";
 import { Link } from "react-router-dom";
 import SCMap from "../Classes/Map";
-
 function Home(){
 
     interface Matchup {
@@ -553,7 +552,6 @@ function Home(){
                 </div>
                 
             </div>
-
         </div>
     )
 }

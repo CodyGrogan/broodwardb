@@ -1,9 +1,31 @@
 import { response } from "express";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import Player from "../Classes/Player";
 import PlayersTableItem from "./PlayersTableItem";
 
 
+interface FilterParams {
+    filterText: string;
+    onFilter: any;
+}
+
+
+
+
+const FilterComponent = ({ filterText, onFilter }: FilterParams) => (
+    <div>
+        <input className="form-control form-control-lg"
+            type="text" 
+            autoComplete="off"
+            id="search"
+            placeholder="Search"
+            aria-label="Search Input"
+            value={filterText}
+            onChange={onFilter}
+        />
+   
+    </div>
+);
 
 function PlayersTable(props: any){
 
@@ -15,6 +37,20 @@ function PlayersTable(props: any){
     const [sortedByRace, setSortedByRace] = useState<Boolean>(false);
 
     const [displayedRows, setDisplayedRows] = useState<number>(20);
+
+    const [filterText, setFilterText] = useState<string>('');
+
+    const filteredList = PlayerList.filter(
+		player => player.name && player.name.toLowerCase().includes(filterText.toLowerCase()),
+	);
+
+    const searchBarMemo = useMemo(() => {
+		console.log('usememo fired')
+		return (
+			<FilterComponent onFilter={
+                (e: any) => setFilterText(e.target.value)} filterText={filterText} />
+		);
+	}, [filterText]);
 
 
     function getPlayerList(){
@@ -48,10 +84,10 @@ function PlayersTable(props: any){
     []);
 
     useEffect(()=>{
-        let length: number = PlayerList.length;
+        let length: number = filteredList.length;
 
         //this code should prevent the table from loading more rows than should be currently shown, but never go over the player list length
-        if (PlayerList.length > displayedRows){
+        if (filteredList.length > displayedRows){
             length = displayedRows;
             let button = document.getElementById('loadMorePlayers') as HTMLElement;
             button.hidden = false;
@@ -59,7 +95,7 @@ function PlayersTable(props: any){
             allbutton.hidden = false;
 
         }
-        else if (displayedRows > PlayerList.length){
+        else if (displayedRows > filteredList.length){
             let button = document.getElementById('loadMorePlayers') as HTMLElement;
             button.hidden = true;
 
@@ -70,14 +106,14 @@ function PlayersTable(props: any){
        
         for (let i = 0; i < length; i++){
             let tablenum = i + 1;
-            let newJSX = <PlayersTableItem name = {PlayerList[i].name} scrace = {PlayerList[i].scrace} tablenum = {tablenum} elo ={PlayerList[i].elo} id={PlayerList[i]._id} />
+            let newJSX = <PlayersTableItem name = {filteredList[i].name} scrace = {filteredList[i].scrace} tablenum = {tablenum} elo ={filteredList[i].elo} id={filteredList[i]._id} />
             jsxArr.push(newJSX);
         }
         setPlayerJsxArr(jsxArr);
 
 
     },
-    [PlayerList, displayedRows]);
+    [filteredList, displayedRows]);
 
     function sortByElo(){
 
@@ -229,6 +265,8 @@ function PlayersTable(props: any){
     return(
         <div>
 
+
+            {searchBarMemo}
             <table className="table">
                 <thead>
                     <tr>
@@ -248,8 +286,8 @@ function PlayersTable(props: any){
 
             </table>
 
-            <button id="loadMorePlayers" onClick={()=>loadMoreRows()} className="btn btn-primary">Load More</button>
-            <button id="loadAllPlayers" onClick={()=>loadAllRows()} className="btn btn-primary">Load All</button>
+            <button id="loadMorePlayers" onClick={()=>loadMoreRows()} className="btn btn-primary loadBtn">Load More</button>
+            <button id="loadAllPlayers" onClick={()=>loadAllRows()} className="btn btn-primary loadBtn">Load All</button>
 
 
         </div>
