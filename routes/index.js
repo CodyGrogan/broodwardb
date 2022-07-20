@@ -451,6 +451,8 @@ async function updateEloInOrder(){
       loser = gameList[i].players[0]
     }
 
+
+    console.log('gamenum ' + gameList[i].gamenum);
     console.log(`winner ${gameList[i].winner[0]}  loser ${loser}`);
 
     loserProfile = playerList.find(({ name }) => name == loser);
