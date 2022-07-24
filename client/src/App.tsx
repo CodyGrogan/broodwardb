@@ -13,6 +13,35 @@ import GamePage from './components/GamePage';
 import TournamentPage from './components/TournamentPage';
 import MapPage from './components/MapPage';
 
+import { initializeApp } from "firebase/app";
+
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+
+  apiKey: "AIzaSyA-MAtGgYwfF2C6jur6Vp34J8kqMTPPGtk",
+
+  authDomain: "broodwardb.firebaseapp.com",
+
+  projectId: "broodwardb",
+
+  storageBucket: "broodwardb.appspot.com",
+
+  messagingSenderId: "476750257135",
+
+  appId: "1:476750257135:web:424f4f692c1fc7d70db41a",
+
+  measurementId: "G-CM92DC59TV"
+
+};
+
+
+// Initialize Firebase
+
+const app = initializeApp(firebaseConfig);
+
+const analytics = getAnalytics(app);
+
 
 function App() {
   return (
