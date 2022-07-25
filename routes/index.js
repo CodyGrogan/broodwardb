@@ -301,6 +301,57 @@ async function resetElo(){
 }
 
 
+router.get('/api/updateGameNum/:apikey', function(req, res){
+
+  console.log("received reset Elo request");
+  
+  let apikey = req.params.apikey;
+  if (apikey == masterApiKey){
+
+    resetGameNum(14, 3, 'KSL4'); 
+    
+    res.sendStatus(200);
+
+  }
+
+  else{
+    res.sendStatus(403);
+  }
+  
+  
+});
+
+async function resetGameNum(index, offset, tournament){
+  console.log('editing gamenum')
+  console.log(index + ' ' +  offset + tournament);
+  GameModel.find({tournament: tournament}, function(err, docs){
+      if(err){
+        let thiserror = {
+          error: true
+  
+        }
+        console.log(thiserror)
+      }
+      else{
+
+        console.log('docs found');
+        console.log(docs);
+        let docLength = docs.length;
+        
+        for (let i = 14; i < docLength; i++){
+
+          let newnum = docs[i].gamenum + offset;
+          console.log(newnum);
+          docs[i].gamenum = newnum;
+          docs[i].save();
+        }
+
+       
+  
+      }
+    })
+}
+
 
 async function updateElo(reverse){
 
