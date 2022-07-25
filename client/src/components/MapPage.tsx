@@ -199,8 +199,11 @@ function MapPage(){
                                 Game History
                                 </div>
                                 <div className="card-body">
+                                    <div className='tableContainer'>
                                     
                                     {gameTableArr}
+
+                                    </div>
                                 </div>
                         </div>
 

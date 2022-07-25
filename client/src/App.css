@@ -67,3 +67,8 @@
 
   color: #0000EE !important ; 
 }
+
+.tableContainer{
+  max-width: 100%;
+  overflow-x: auto;
+}

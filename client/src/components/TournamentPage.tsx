@@ -420,7 +420,9 @@ function TournamentPage(props: any){
 
 
                        
+                       <div className="tableContainer">
                             {spoilerTable}
+                        </div>
 
                          
                                 

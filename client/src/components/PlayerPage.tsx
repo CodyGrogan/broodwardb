@@ -897,30 +897,34 @@ function PlayerPage(){
                                 <div className="card-header">
                                 Game History
                                 </div>
-                                <div className="card-body">
-                                    <table className='table'>
-                                        <thead>
-                                    <tr>
-                                       <th><button onClick={()=>sortByDate()} className='btn btn-info'>Date</button> </th>
-                                       <th><button onClick={()=>sortByOpponent()} className='btn btn-info'>  Opponent</button> </th> 
-                                          <th><button onClick={()=>sortByWinner()} className='btn btn-info'>Result</button> </th> 
-                                        <th><button onClick={()=>sortByMap()}  className='btn btn-info'>Map</button> </th> 
-                                        <th><button onClick={()=>sortByTourny()}  className='btn btn-info'>Tourny</button> </th> 
-                                       <th><button className='btn btn-info'>Link</button> </th>
+
+                                <div className='tableContainer'>
+                                    <div className="card-body">
+                                        <table className='table'>
+                                            <thead>
+                                        <tr>
+                                        <th><button onClick={()=>sortByDate()} className='btn btn-info'>Date</button> </th>
+                                        <th><button onClick={()=>sortByOpponent()} className='btn btn-info'>  Opponent</button> </th> 
+                                            <th><button onClick={()=>sortByWinner()} className='btn btn-info'>Result</button> </th> 
+                                            <th><button onClick={()=>sortByMap()}  className='btn btn-info'>Map</button> </th> 
+                                            <th><button onClick={()=>sortByTourny()}  className='btn btn-info'>Tourny</button> </th> 
+                                        <th><button className='btn btn-info'>Link</button> </th>
 
 
-                                        
+                                            
 
-                                    </tr>
-                                    </thead>
+                                        </tr>
+                                        </thead>
 
-                                    <tbody>
-                                        {gameTableArr}
-                                    </tbody>
+                                        <tbody>
+                                            {gameTableArr}
+                                        </tbody>
 
-                                    </table>
-                                    <button id="loadMorePlayers" onClick={()=>loadMoreRows()} className="btn btn-primary loadBtn">Load More</button>
-            <button id="loadAllPlayers" onClick={()=>loadAllRows()} className="btn btn-primary loadBtn">Load All</button>
+                                        </table>
+                                        <button id="loadMorePlayers" onClick={()=>loadMoreRows()} className="btn btn-primary loadBtn">Load More</button>
+                <button id="loadAllPlayers" onClick={()=>loadAllRows()} className="btn btn-primary loadBtn">Load All</button>
+
+                                    </div>
 
                                 </div>
                         </div>

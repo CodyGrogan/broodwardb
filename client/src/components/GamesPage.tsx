@@ -39,7 +39,11 @@ function GamesPage(){
             <br/>            
             <br/>
 
+            <div className="tableContainer">
+
             {gameTable}
+
+            </div>
             
         </div>
     )
