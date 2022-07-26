@@ -53,6 +53,10 @@ function TournamentPage(props: any){
         fetch(`/api/getonetournament/${tournament}`).then(response => response.json()).then(data =>{
             console.log('received tournament json');
             console.log(data);
+
+            
+            
+            
             setThisTournament(data);
         }).catch((error)=>{
             console.log('error: ' + error);
@@ -64,6 +68,19 @@ function TournamentPage(props: any){
         fetch(`/api/getallgamesintournament/${tournament}`).then(response => response.json()).then(data =>{
             console.log('received tournament games json');
             console.log(data);
+            data.sort(function(a: Game, b: Game) {
+                const nameA = a.gamenum; // ignore upper and lowercase
+                const nameB = b.gamenum; // ignore upper and lowercase
+                if (nameA < nameB) {
+                  return -1;
+                }
+                if (nameA > nameB) {
+                  return 1;
+                }
+              
+                // names must be equal
+                return 0;
+              });
             setGameData(data);
         }).catch((error)=>{
             console.log('error: ' + error);
