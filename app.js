@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const helmet = require('helmet');
 require('dotenv').config();
 
 
@@ -22,7 +23,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/client/build')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use(helmet());
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
